@@ -17,7 +17,7 @@ Third stage utilizes SD ULTIMATE UPSCALE - 8K size.
 ![image info](sample_1_1.png)\
 ![image info](sample_1_2.png)\
 ![image info](sample_2_1.png)\
-![image info](sample_2_1.png)
+![image info](sample_2_2.png)
 
 
 
