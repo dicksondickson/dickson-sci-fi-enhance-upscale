@@ -47,7 +47,7 @@ Put the the ttplanet-controlnet folder into your comfyui\custom_nodes folder
 
 # Nodes Used
 
-There are a few custom nodes in use and they can be installed when you load up the workflow via ComfyUI Manager.\
+There are a few custom nodes in use and they can be installed when you load up the workflow via ComfyUI Manager.
 
 If you are unable to find them with the ComfyUI manager - these are the nodes that the workflow uses:
 
