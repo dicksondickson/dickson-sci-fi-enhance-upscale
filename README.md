@@ -1,13 +1,13 @@
 # Dickson's Sci-Fi Enhance Upscale
 
 This a ComfyUI workflow to upscale images to 4K or 8K.\
-Great for general upscale on photos with Magnific-like results.\
+Great for general upscale on photos with Magnific-like results.
 
-This workflow upscales in 3 stages.\
+This workflow upscales in 3 stages.
 
 The first stage utilizes CCSR - 2x upscale.\
 Second stage utilizes SUPIR - 4K size.\
-Third stage utilizes SD ULTIMATE UPSCALE - 8K size.\
+Third stage utilizes SD ULTIMATE UPSCALE - 8K size.
 
 
 
