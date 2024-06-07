@@ -35,6 +35,9 @@ Running all three stages takes about 18 - 22 minutes.
 RealVisXL V4.0 Lightning\
 [https://civitai.com/models/139562/realvisxl-v40](https://civitai.com/models/139562/realvisxl-v40)
 
+NKMD 8x Superscale Faces - put this in the comfyui upscaler folder:\
+[https://icedrive.net/s/d3adUbHsOO](https://icedrive.net/s/d3adUbHsOO)
+
 TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic\
 Get the v2 version:\
 [https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main](https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main)
