@@ -33,14 +33,14 @@ Running all three stages takes about 18 - 22 minutes.
 # Models Used
 
 RealVisXL V4.0 Lightning\
-[https://civitai.com/models/139562/realvisxl-v40](https://civitai.com/models/139562/realvisxl-v40)\
+[https://civitai.com/models/139562/realvisxl-v40](https://civitai.com/models/139562/realvisxl-v40)
 
 TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic\
 Get the v2 version:\
-[https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main](https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main)\
+[https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main](https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main)
 
 NOTE - You'll need the preprocessor node as well.\
-Put the the ttplanet-controlnet folder into your comfyui\custom_nodes folder\
+Put the the ttplanet-controlnet folder into your comfyui\custom_nodes folder
 
 
 
@@ -49,7 +49,7 @@ Put the the ttplanet-controlnet folder into your comfyui\custom_nodes folder\
 
 There are a few custom nodes in use and they can be installed when you load up the workflow via ComfyUI Manager.\
 
-If you are unable to find them with the ComfyUI manager - these are the nodes that the workflow uses:\
+If you are unable to find them with the ComfyUI manager - these are the nodes that the workflow uses:
 
 
 StableSR
