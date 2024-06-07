@@ -24,6 +24,7 @@ Third stage utilizes SD ULTIMATE UPSCALE - 8K size.
 
 # ETA
 
+Using a RTX 4090:\
 First stage and second stage upscale combined takes about 8 minutes.\
 Running all three stages takes about 18 - 22 minutes.
 
