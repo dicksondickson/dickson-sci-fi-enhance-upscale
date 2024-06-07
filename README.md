@@ -17,7 +17,7 @@ Third stage utilizes SD ULTIMATE UPSCALE - 8K size.\
 ![image info](sample_1_1.png)\
 ![image info](sample_1_2.png)\
 ![image info](sample_2_1.png)\
-![image info](sample_2_1.png)\
+![image info](sample_2_1.png)
 
 
 
@@ -25,7 +25,7 @@ Third stage utilizes SD ULTIMATE UPSCALE - 8K size.\
 # ETA
 
 First stage and second stage upscale combined takes about 8 minutes.\
-Running all three stages takes about 18 - 22 minutes.\
+Running all three stages takes about 18 - 22 minutes.
 
 
 
