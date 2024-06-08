@@ -57,7 +57,7 @@ If you are unable to find them with the ComfyUI manager - these are the nodes th
 
 
 StableSR
-[https://github.com/IceClear/StableSR](https://github.com/IceClear/StableSR)
+[https://github.com/gameltb/Comfyui-StableSR](https://github.com/gameltb/Comfyui-StableSR)
 
 
 SUPIR
