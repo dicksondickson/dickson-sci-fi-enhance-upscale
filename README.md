@@ -19,8 +19,8 @@ The workflow is designed to save the result of each stage.
 ![image info](sample_1_1.png)\
 ![image info](sample_1_2.png)\
 ![image info](sample_2_1.png)\
-![image info](sample_2_2.png)
-
+![image info](sample_2_2.png)\
+![image info](workflow.png)
 
 
 
