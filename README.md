@@ -7,7 +7,9 @@ This workflow upscales in 3 stages.
 
 The first stage utilizes CCSR - 2x upscale.\
 Second stage utilizes SUPIR - 4K size.\
-Third stage utilizes SD ULTIMATE UPSCALE - 8K size.
+Third stage utilizes SD ULTIMATE UPSCALE - 8K size.\
+
+The workflow is designed to save the result of each stage.
 
 
 
