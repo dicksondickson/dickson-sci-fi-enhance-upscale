@@ -103,7 +103,7 @@ masquerade-nodes-comfyui
 
 
 # Credits
-I only created the workflow. Thanks to @comfyanonymous @Dr.Lt.Data and other authors for creating and sharing their work.
+I only created the workflow. Thanks to [@comfyanonymous](https://github.com/comfyanonymous) [@Dr.Lt.Data](https://github.com/ltdrdata) and other authors for creating and sharing their work.
 
 
 
