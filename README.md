@@ -45,7 +45,7 @@ TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic\
 Get the v2 version:\
 [https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main](https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main)
 
-NOTE - You'll need the preprocessor node as well.\
+NOTE - You'll need TTPlanet's preprocessor node as well.\
 Put the the ttplanet-controlnet folder into your comfyui\custom_nodes folder
 
 
