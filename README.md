@@ -98,5 +98,10 @@ ComfyUI_essentials
 [https://github.com/cubiq/ComfyUI_essentials](https://github.com/cubiq/ComfyUI_essentials)
 
 
+# Credits
+I only created the workflow. Thanks to @comfyanonymous @Dr.Lt.Data and other authors for creating and sharing their work.
+
+
+
 masquerade-nodes-comfyui
 [https://github.com/BadCafeCode/masquerade-nodes-comfyui](https://github.com/BadCafeCode/masquerade-nodes-comfyui)
