@@ -1,13 +1,13 @@
 {
-  "last_node_id": 491,
-  "last_link_id": 766,
+  "last_node_id": 514,
+  "last_link_id": 845,
   "nodes": [
     {
       "id": 220,
       "type": "SUPIR_model_loader_v2",
       "pos": [
         2270,
-        920
+        860
       ],
       "size": {
         "0": 410,
@@ -84,7 +84,7 @@
         {
           "name": "",
           "type": "*",
-          "link": 641
+          "link": 819
         }
       ],
       "outputs": [
@@ -153,7 +153,7 @@
         26
       ],
       "flags": {},
-      "order": 64,
+      "order": 67,
       "mode": 0,
       "inputs": [
         {
@@ -168,78 +168,6 @@
           "type": "IMAGE",
           "links": [
             590
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 381,
-      "type": "Reroute",
-      "pos": [
-        1920,
-        750
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 75,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 729
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            543
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 427,
-      "type": "Reroute",
-      "pos": [
-        1350,
-        700
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 56,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 689
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            690
           ],
           "slot_index": 0
         }
@@ -434,7 +362,7 @@
       },
       "widgets_values": [
         "",
-        "dow_txt2image_APFRH_001_001_00922_ (3) EDIT"
+        "22BC25C2D650C881474EED764855A0948EB86AD8C3376DB07674EB84B6A04AE1_i2i_00001_"
       ]
     },
     {
@@ -460,81 +388,6 @@
       ],
       "properties": {
         "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
-      "id": 307,
-      "type": "Reroute",
-      "pos": [
-        -1440,
-        700
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 33,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 737
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            676
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 410,
-      "type": "Reroute",
-      "pos": [
-        -1450,
-        820
-      ],
-      "size": [
-        90.4,
-        26
-      ],
-      "flags": {},
-      "order": 39,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 707,
-          "widget": {
-            "name": "value"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            613
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
       }
     },
     {
@@ -602,119 +455,6 @@
       ]
     },
     {
-      "id": 247,
-      "type": "CCSR_Upscale",
-      "pos": [
-        -750,
-        960
-      ],
-      "size": {
-        "0": 330,
-        "1": 610
-      },
-      "flags": {},
-      "order": 51,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "ccsr_model",
-          "type": "CCSRMODEL",
-          "link": 324,
-          "slot_index": 0
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 743
-        },
-        {
-          "name": "scale_by",
-          "type": "FLOAT",
-          "link": 325,
-          "widget": {
-            "name": "scale_by"
-          },
-          "slot_index": 2
-        }
-      ],
-      "outputs": [
-        {
-          "name": "upscaled_image",
-          "type": "IMAGE",
-          "links": [
-            655,
-            656
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CCSR_Upscale"
-      },
-      "widgets_values": [
-        "lanczos",
-        1,
-        45,
-        0.6667,
-        0.3333,
-        "ccsr_tiled_mixdiff",
-        512,
-        256,
-        1024,
-        1024,
-        "wavelet",
-        false,
-        1760,
-        "increment"
-      ]
-    },
-    {
-      "id": 413,
-      "type": "Get Image Size",
-      "pos": [
-        -380,
-        1050
-      ],
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {},
-      "order": 57,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 655
-        }
-      ],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            725
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            726
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Get Image Size"
-      }
-    },
-    {
       "id": 368,
       "type": "Image Comparer (rgthree)",
       "pos": {
@@ -740,7 +480,7 @@
         {
           "name": "image_a",
           "type": "IMAGE",
-          "link": 679,
+          "link": 809,
           "dir": 3
         },
         {
@@ -757,8 +497,16 @@
       },
       "widgets_values": [
         [
-          "/view?filename=rgthree.compare._temp_iosgr_00001_.png&type=temp&subfolder=&rand=0.21447440379085336",
-          "/view?filename=rgthree.compare._temp_iosgr_00002_.png&type=temp&subfolder=&rand=0.07181876353854699"
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_goxzc_00001_.png&type=temp&subfolder=&rand=0.887950844958751"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_goxzc_00002_.png&type=temp&subfolder=&rand=0.8600152714704187"
+          }
         ]
       ]
     },
@@ -890,7 +638,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 78,
+      "order": 77,
       "mode": 0,
       "inputs": [
         {
@@ -1000,13 +748,13 @@
         {
           "name": "image_a",
           "type": "IMAGE",
-          "link": 668,
+          "link": 816,
           "dir": 3
         },
         {
           "name": "image_b",
           "type": "IMAGE",
-          "link": 723,
+          "link": 798,
           "dir": 3
         }
       ],
@@ -1017,55 +765,17 @@
       },
       "widgets_values": [
         [
-          "/view?filename=rgthree.compare._temp_tmsdi_00001_.png&type=temp&subfolder=&rand=0.8785203649167588",
-          "/view?filename=rgthree.compare._temp_tmsdi_00002_.png&type=temp&subfolder=&rand=0.15199783882772389"
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_uyfdi_00001_.png&type=temp&subfolder=&rand=0.30567639652802914"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_uyfdi_00002_.png&type=temp&subfolder=&rand=0.5594599871129052"
+          }
         ]
-      ]
-    },
-    {
-      "id": 210,
-      "type": "SUPIR_decode",
-      "pos": [
-        3630,
-        860
-      ],
-      "size": {
-        "0": 260,
-        "1": 102
-      },
-      "flags": {},
-      "order": 81,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "SUPIR_VAE",
-          "type": "SUPIRVAE",
-          "link": 428,
-          "slot_index": 0
-        },
-        {
-          "name": "latents",
-          "type": "LATENT",
-          "link": 271
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            536
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SUPIR_decode"
-      },
-      "widgets_values": [
-        true,
-        512
       ]
     },
     {
@@ -1080,13 +790,13 @@
         26
       ],
       "flags": {},
-      "order": 60,
+      "order": 64,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 690
+          "link": 789
         }
       ],
       "outputs": [
@@ -1094,47 +804,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            589,
-            723
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 361,
-      "type": "Reroute",
-      "pos": [
-        4470,
-        820
-      ],
-      "size": [
-        90.4,
-        26
-      ],
-      "flags": {},
-      "order": 63,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 722,
-          "widget": {
-            "name": "value"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            687
+            589
           ],
           "slot_index": 0
         }
@@ -1187,80 +857,9 @@
         "no",
         "",
         "_UPSCALED_4K",
-        ""
+        "",
+        "22BC25C2D650C881474EED764855A0948EB86AD8C3376DB07674EB84B6A04AE1_i2i_00001__UPSCALED_4K"
       ]
-    },
-    {
-      "id": 376,
-      "type": "Reroute",
-      "pos": [
-        4470,
-        760
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 83,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 667
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            641
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 415,
-      "type": "Reroute",
-      "pos": [
-        -500,
-        860
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 50,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 627
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            724
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
     },
     {
       "id": 423,
@@ -1374,42 +973,6 @@
       }
     },
     {
-      "id": 252,
-      "type": "Reroute",
-      "pos": [
-        3510,
-        750
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 77,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 543
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            537
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
       "id": 245,
       "type": "Reroute",
       "pos": [
@@ -1487,109 +1050,6 @@
         "showOutputText": true,
         "horizontal": false
       }
-    },
-    {
-      "id": 380,
-      "type": "StableSRColorFix",
-      "pos": [
-        3950,
-        840
-      ],
-      "size": {
-        "0": 320,
-        "1": 80
-      },
-      "flags": {},
-      "order": 82,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 536
-        },
-        {
-          "name": "color_map_image",
-          "type": "IMAGE",
-          "link": 537
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            667,
-            668,
-            719
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "StableSRColorFix"
-      },
-      "widgets_values": [
-        "Wavelet"
-      ]
-    },
-    {
-      "id": 455,
-      "type": "ImageResize+",
-      "pos": [
-        1530,
-        1360
-      ],
-      "size": {
-        "0": 315,
-        "1": 218
-      },
-      "flags": {},
-      "order": 74,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 728
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            729,
-            730
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageResize+"
-      },
-      "widgets_values": [
-        4096,
-        4096,
-        "lanczos",
-        "keep proportion",
-        "always",
-        0
-      ]
     },
     {
       "id": 430,
@@ -1677,86 +1137,6 @@
       }
     },
     {
-      "id": 209,
-      "type": "SUPIR_conditioner",
-      "pos": [
-        2750,
-        910
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 79,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "SUPIR_model",
-          "type": "SUPIRMODEL",
-          "link": 431,
-          "slot_index": 0
-        },
-        {
-          "name": "latents",
-          "type": "LATENT",
-          "link": 269,
-          "slot_index": 1
-        },
-        {
-          "name": "captions",
-          "type": "STRING",
-          "link": null,
-          "widget": {
-            "name": "captions"
-          }
-        },
-        {
-          "name": "positive_prompt",
-          "type": "STRING",
-          "link": 636,
-          "widget": {
-            "name": "positive_prompt"
-          }
-        },
-        {
-          "name": "negative_prompt",
-          "type": "STRING",
-          "link": 759,
-          "widget": {
-            "name": "negative_prompt"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "SUPIR_cond_pos",
-          "links": [
-            266
-          ],
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "SUPIR_cond_neg",
-          "links": [
-            267
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SUPIR_conditioner"
-      },
-      "widgets_values": [
-        "photograph of beautiful a (((Victorian French woman))) walking on the meadows smiling, half Japanese half danish woman, Danish woman, white Caucasian woman, Nordic woman, chic bob cut hair, perfect eyes, brown eyes, big breasts, huge cleavage, seductive, sexy, Victorian red lace clothing highly detailed, sky clouds, meadow grass background, Victorian era,\n\npolaroid, film, photography, fashion photography, award-winning photography, aesthetic and beauty, skillful details, no blur, f/1.4, innovative, lens flare, female, vogue cover style,  vibrant (lofi, analog, kodak film)",
-        "bad quality",
-        ""
-      ]
-    },
-    {
       "id": 475,
       "type": "Reroute",
       "pos": [
@@ -1786,78 +1166,6 @@
           "type": "STRING",
           "links": [
             757
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 314,
-      "type": "Reroute",
-      "pos": [
-        1360,
-        980
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 72,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 525
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            728
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 372,
-      "type": "Reroute",
-      "pos": [
-        1100,
-        920
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 68,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 670
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            525
           ],
           "slot_index": 0
         }
@@ -2187,46 +1495,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 336,
-      "type": "TTPlanet_Tile_Preprocessor_Simple",
-      "pos": [
-        6200,
-        1160
-      ],
-      "size": {
-        "0": 350,
-        "1": 90
-      },
-      "flags": {},
-      "order": 88,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 479
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image_output",
-          "type": "IMAGE",
-          "links": [
-            476
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "TTPlanet_Tile_Preprocessor_Simple"
-      },
-      "widgets_values": [
-        2,
-        5
-      ]
-    },
-    {
       "id": 333,
       "type": "ControlNetLoader",
       "pos": [
@@ -2294,44 +1562,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 342,
-      "type": "Reroute",
-      "pos": [
-        6480,
-        830
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 89,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 481
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            456,
-            747,
-            749
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
       "id": 340,
       "type": "Reroute",
       "pos": [
@@ -2358,8 +1588,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            479,
-            481
+            481,
+            841
           ],
           "slot_index": 0
         }
@@ -2506,205 +1736,6 @@
       }
     },
     {
-      "id": 403,
-      "type": "Reroute",
-      "pos": [
-        7070,
-        700
-      ],
-      "size": [
-        82,
-        26
-      ],
-      "flags": {},
-      "order": 67,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 590
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            591
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 390,
-      "type": "Get Image Size",
-      "pos": [
-        7230,
-        810
-      ],
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {},
-      "order": 92,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 561
-        }
-      ],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            750
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            751
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Get Image Size"
-      }
-    },
-    {
-      "id": 471,
-      "type": "ImageResize+",
-      "pos": [
-        7520,
-        790
-      ],
-      "size": {
-        "0": 320,
-        "1": 220
-      },
-      "flags": {},
-      "order": 93,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 749
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "link": 750,
-          "widget": {
-            "name": "width"
-          }
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "link": 751,
-          "widget": {
-            "name": "height"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            752
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageResize+"
-      },
-      "widgets_values": [
-        512,
-        512,
-        "bicubic",
-        "stretch",
-        "always",
-        0
-      ]
-    },
-    {
-      "id": 389,
-      "type": "StableSRColorFix",
-      "pos": [
-        7900,
-        920
-      ],
-      "size": {
-        "0": 320,
-        "1": 80
-      },
-      "flags": {},
-      "order": 94,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 556
-        },
-        {
-          "name": "color_map_image",
-          "type": "IMAGE",
-          "link": 752
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            662,
-            663,
-            715
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "StableSRColorFix"
-      },
-      "widgets_values": [
-        "Wavelet"
-      ]
-    },
-    {
       "id": 450,
       "type": "Image Comparer (rgthree)",
       "pos": {
@@ -2724,13 +1755,13 @@
         "1": 1320
       },
       "flags": {},
-      "order": 97,
+      "order": 96,
       "mode": 0,
       "inputs": [
         {
           "name": "image_a",
           "type": "IMAGE",
-          "link": 715,
+          "link": 824,
           "dir": 3
         },
         {
@@ -2747,8 +1778,16 @@
       },
       "widgets_values": [
         [
-          "/view?filename=rgthree.compare._temp_kjxlx_00001_.png&type=temp&subfolder=&rand=0.5581380958663676",
-          "/view?filename=rgthree.compare._temp_kjxlx_00002_.png&type=temp&subfolder=&rand=0.7383762874076754"
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_lvith_00001_.png&type=temp&subfolder=&rand=0.8793686075536447"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_lvith_00002_.png&type=temp&subfolder=&rand=0.9576092085964383"
+          }
         ]
       ]
     },
@@ -2766,13 +1805,13 @@
       "flags": {
         "collapsed": false
       },
-      "order": 96,
+      "order": 95,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 663
+          "link": 823
         },
         {
           "name": "filename_prefix",
@@ -2801,7 +1840,7 @@
         "1": 224
       },
       "flags": {},
-      "order": 73,
+      "order": 74,
       "mode": 0,
       "inputs": [
         {
@@ -2832,7 +1871,8 @@
         "no",
         "",
         "_UPSCALED_8K",
-        ""
+        "",
+        "22BC25C2D650C881474EED764855A0948EB86AD8C3376DB07674EB84B6A04AE1_i2i_00001__UPSCALED_8K"
       ]
     },
     {
@@ -2875,90 +1915,18 @@
       }
     },
     {
-      "id": 454,
-      "type": "ImageResize+",
-      "pos": [
-        -380,
-        1180
-      ],
-      "size": {
-        "0": 320,
-        "1": 220
-      },
-      "flags": {},
-      "order": 61,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 724
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "link": 725,
-          "widget": {
-            "name": "width"
-          }
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "link": 726,
-          "widget": {
-            "name": "height"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            727
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageResize+"
-      },
-      "widgets_values": [
-        512,
-        512,
-        "bicubic",
-        "keep proportion",
-        "always",
-        0
-      ]
-    },
-    {
       "id": 208,
       "type": "SUPIR_sample",
       "pos": [
         3220,
-        880
+        860
       ],
       "size": {
         "0": 330,
         "1": 710
       },
       "flags": {},
-      "order": 80,
+      "order": 79,
       "mode": 0,
       "inputs": [
         {
@@ -3015,6 +1983,1279 @@
         512,
         512
       ]
+    },
+    {
+      "id": 480,
+      "type": "Note",
+      "pos": [
+        -3380,
+        1130
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Positive prompt. Describe the subject."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 481,
+      "type": "Note",
+      "pos": [
+        -3370,
+        1430
+      ],
+      "size": {
+        "0": 210,
+        "1": 160
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Positive prompt. Describe overall quality.\n\nThis node adds combines the prompts together."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 473,
+      "type": "Note",
+      "pos": [
+        -2050,
+        720
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Get filename from original file. This will be used for the output files."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 105,
+      "type": "Note",
+      "pos": [
+        -1190,
+        1380
+      ],
+      "size": {
+        "0": 410,
+        "1": 200
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "sampling methods:\n\nccsr = normal, untiled, heavy on VRAM\n\nccsr_tiled_mixdiff = tiled, each tile decoded separately, has seams\n\nccsr_tiled_vae_gaussian_weights = seams fixed, can be less accurate and introduce extra noise"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 482,
+      "type": "Note",
+      "pos": [
+        -1170,
+        1260
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "CCSR model used for CCSR. Get it on their github page."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 483,
+      "type": "Note",
+      "pos": [
+        -1180,
+        850
+      ],
+      "size": {
+        "0": 250,
+        "1": 100
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Upscale by a factor of 2. Works best if your original image is less than 2k."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 470,
+      "type": "Note",
+      "pos": [
+        1540,
+        1250
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Clamps size to 4096 - 4k"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 484,
+      "type": "Note",
+      "pos": [
+        -30,
+        1080
+      ],
+      "size": {
+        "0": 250,
+        "1": 100
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Resize the original image and use that as a color reference for the color fix. Tiled diffusion methods tends to create color shifts. We want our colors to be consistent."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 485,
+      "type": "Note",
+      "pos": [
+        1510,
+        920
+      ],
+      "size": {
+        "0": 250,
+        "1": 100
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Base model for SUPIR upscale. Realvis XL works well. You can try other models."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 468,
+      "type": "Note",
+      "pos": [
+        2900,
+        1180
+      ],
+      "size": {
+        "0": 290,
+        "1": 170
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "SUPIR Sampler\nRestore EDM sampler gives the best results in my testing. Even though the recommended settings for Realviz XL is 6 steps - it stills leaves a lot of noise. 24 steps gives the best quality.\n\n\n\nREALVIS XL recommended settings.\nUse Lightning models with DPM++ SDE Karras / DPM++ SDE sampler, 4-6 steps and CFG Scale 1-2"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 486,
+      "type": "Note",
+      "pos": [
+        4950,
+        1070
+      ],
+      "size": {
+        "0": 290,
+        "1": 80
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "SD Ultimate upscale brings us to 8k\n\nAgain we use Realviz XL but you can try other models.\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 487,
+      "type": "Note",
+      "pos": [
+        5640,
+        1370
+      ],
+      "size": {
+        "0": 290,
+        "1": 80
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Controlnet model to guide the diffusion."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 488,
+      "type": "Note",
+      "pos": [
+        4770,
+        1630
+      ],
+      "size": {
+        "0": 290,
+        "1": 80
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Upscale model to bring us to 8k. NMKD 8x Faces works really good. You can try other upscale models."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 332,
+      "type": "ControlNetApplyAdvanced",
+      "pos": [
+        6200,
+        1470
+      ],
+      "size": {
+        "0": 370,
+        "1": 170
+      },
+      "flags": {},
+      "order": 90,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 473
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 474
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 475,
+          "slot_index": 2
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 842
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            458
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            459
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        0.9,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 339,
+      "type": "Note",
+      "pos": [
+        6210,
+        1710
+      ],
+      "size": {
+        "0": 360,
+        "1": 470
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "realviz xl - NOTES\n\nUse Turbo models with DPM++ SDE Karras sampler, 4-10 steps and CFG Scale 1-2.5\n\nUse Lightning models with DPM++ SDE Karras / DPM++ SDE sampler, 4-6 steps and CFG Scale 1-2\n\n\nRecommended Negative Prompt:\n\n(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth\n\nor another negative prompt\n\nᅠ\n\nRecommended Generation Parameters:\nSampling Steps: 15-30+\nSampling Method: DPM++ 2M Karras / or another\n\nᅠ\n\nHires Fix Parameters:\n\nUpscaler: 4x-UltraSharp upscaler / or another\n\nDenoising strength: 0.1-0.5\n\nUpscale by: 1.1-1.5\n\nᅠ\n\nOptional Parameters:\n\nENSD: 31337\n\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 386,
+      "type": "Image Comparer (rgthree)",
+      "pos": {
+        "0": 7280,
+        "1": 1210,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 1010,
+        "1": 1320
+      },
+      "flags": {},
+      "order": 97,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_a",
+          "type": "IMAGE",
+          "link": 825,
+          "dir": 3
+        },
+        {
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 591,
+          "dir": 3
+        }
+      ],
+      "outputs": [],
+      "title": "Base vs 3rd Pass",
+      "properties": {
+        "comparer_mode": "Slide"
+      },
+      "widgets_values": [
+        [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_dqfvp_00001_.png&type=temp&subfolder=&rand=0.594239208723812"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_dqfvp_00002_.png&type=temp&subfolder=&rand=0.702856388093719"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 452,
+      "type": "SaveImage",
+      "pos": [
+        3040,
+        1670
+      ],
+      "size": {
+        "0": 540,
+        "1": 570
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 85,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 817
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 718,
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "slot_index": 1
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "dow_txt2image_APFRH_001_001_00205_postpro_002_001_export_upscaled_CCSR_SUPIR_SDUS"
+      ]
+    },
+    {
+      "id": 490,
+      "type": "SaveImage",
+      "pos": [
+        -310,
+        1630
+      ],
+      "size": {
+        "0": 540,
+        "1": 570
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 70,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 810
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 764,
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "slot_index": 1
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "dow_txt2image_APFRH_001_001_00205_postpro_002_001_export_upscaled_CCSR_SUPIR_SDUS"
+      ]
+    },
+    {
+      "id": 411,
+      "type": "Reroute",
+      "pos": [
+        -1190,
+        780
+      ],
+      "size": [
+        90.4,
+        26
+      ],
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 613,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            693,
+            766
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 489,
+      "type": "StringFunction|pysssss",
+      "pos": [
+        -740,
+        1660
+      ],
+      "size": {
+        "0": 400,
+        "1": 224
+      },
+      "flags": {},
+      "order": 53,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 766,
+          "widget": {
+            "name": "text_a"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            764
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringFunction|pysssss"
+      },
+      "widgets_values": [
+        "append",
+        "no",
+        "",
+        "_UPSCALED_2X",
+        "",
+        "22BC25C2D650C881474EED764855A0948EB86AD8C3376DB07674EB84B6A04AE1_i2i_00001__UPSCALED_2X"
+      ]
+    },
+    {
+      "id": 399,
+      "type": "Note",
+      "pos": [
+        6210,
+        1310
+      ],
+      "size": {
+        "0": 350,
+        "1": 80
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "blur strength 4 -5 gives the best results\nhigh sharpness but large halo\nneeds more experimentation\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 491,
+      "type": "Note",
+      "pos": [
+        6830,
+        890
+      ],
+      "size": {
+        "0": 330,
+        "1": 60
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Play with the denoise value. The higher the denoise, more \"detail\" it adds.\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 472,
+      "type": "Note",
+      "pos": [
+        -3430,
+        1940
+      ],
+      "size": {
+        "0": 270,
+        "1": 130
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "General prompt to guide the diffusion.\n\nWorks best when they are general.\n\ncombines with original prompt"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 456,
+      "type": "Note",
+      "pos": [
+        -3480,
+        2130
+      ],
+      "size": {
+        "0": 340,
+        "1": 110
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Negative Prompt not really needed\n\nbad quality, blurry, messy\n(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 342,
+      "type": "Reroute",
+      "pos": [
+        6480,
+        830
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 88,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 481
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            456,
+            747
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 427,
+      "type": "Reroute",
+      "pos": [
+        1350,
+        700
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 56,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 689
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            787
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 314,
+      "type": "Reroute",
+      "pos": [
+        1360,
+        980
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 73,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 525
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            728
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 453,
+      "type": "Fast Groups Muter (rgthree)",
+      "pos": {
+        "0": -3110,
+        "1": 710,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 460,
+        "1": 220
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 495,
+      "type": "Reroute",
+      "pos": [
+        3850,
+        690
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 60,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 787
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            789,
+            798,
+            838
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 455,
+      "type": "ImageResize+",
+      "pos": [
+        1520,
+        1380
+      ],
+      "size": {
+        "0": 315,
+        "1": 218
+      },
+      "flags": {},
+      "order": 75,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 728
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            730
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageResize+"
+      },
+      "widgets_values": [
+        4096,
+        4096,
+        "lanczos",
+        "keep proportion",
+        "always",
+        0
+      ]
+    },
+    {
+      "id": 361,
+      "type": "Reroute",
+      "pos": [
+        4470,
+        780
+      ],
+      "size": [
+        90.4,
+        26
+      ],
+      "flags": {},
+      "order": 63,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 722,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            687
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 247,
+      "type": "CCSR_Upscale",
+      "pos": [
+        -750,
+        960
+      ],
+      "size": {
+        "0": 330,
+        "1": 610
+      },
+      "flags": {},
+      "order": 51,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "ccsr_model",
+          "type": "CCSRMODEL",
+          "link": 324,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 743
+        },
+        {
+          "name": "scale_by",
+          "type": "FLOAT",
+          "link": 325,
+          "widget": {
+            "name": "scale_by"
+          },
+          "slot_index": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "upscaled_image",
+          "type": "IMAGE",
+          "links": [
+            811
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CCSR_Upscale"
+      },
+      "widgets_values": [
+        "lanczos",
+        1,
+        45,
+        0.6667,
+        0.3333,
+        "ccsr_tiled_mixdiff",
+        512,
+        256,
+        1024,
+        1024,
+        "wavelet",
+        false,
+        1766,
+        "increment"
+      ]
+    },
+    {
+      "id": 503,
+      "type": "Reroute",
+      "pos": [
+        -380,
+        960
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 57,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 811
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            836
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 415,
+      "type": "Reroute",
+      "pos": [
+        -380,
+        860
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 627
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            835
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 502,
+      "type": "Reroute",
+      "pos": [
+        140,
+        920
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 65,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 837
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            808,
+            809,
+            810
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 372,
+      "type": "Reroute",
+      "pos": [
+        1090,
+        910
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 68,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 808
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            525
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 210,
+      "type": "SUPIR_decode",
+      "pos": [
+        3630,
+        860
+      ],
+      "size": {
+        "0": 260,
+        "1": 102
+      },
+      "flags": {},
+      "order": 80,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "SUPIR_VAE",
+          "type": "SUPIRVAE",
+          "link": 428,
+          "slot_index": 0
+        },
+        {
+          "name": "latents",
+          "type": "LATENT",
+          "link": 271
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            813
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SUPIR_decode"
+      },
+      "widgets_values": [
+        true,
+        512
+      ]
+    },
+    {
+      "id": 504,
+      "type": "Reroute",
+      "pos": [
+        3930,
+        860
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 81,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 813
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            839
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
     },
     {
       "id": 320,
@@ -3077,8 +3318,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            556,
-            561
+            820
           ],
           "shape": 3,
           "slot_index": 0
@@ -3113,513 +3353,115 @@
       "bgcolor": "#355"
     },
     {
-      "id": 453,
-      "type": "Fast Groups Muter (rgthree)",
-      "pos": {
-        "0": -3110,
-        "1": 710,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 460,
-        "1": 220
-      },
+      "id": 403,
+      "type": "Reroute",
+      "pos": [
+        7180,
+        690
+      ],
+      "size": [
+        82,
+        26
+      ],
       "flags": {},
-      "order": 8,
+      "order": 72,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 590
+        }
+      ],
       "outputs": [
         {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            591,
+            843
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
-        "matchColors": "",
-        "matchTitle": "",
-        "showNav": true,
-        "sort": "alphanumeric",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
+        "showOutputText": true,
+        "horizontal": false
       }
     },
     {
-      "id": 480,
-      "type": "Note",
+      "id": 507,
+      "type": "Reroute",
       "pos": [
-        -3380,
-        1130
+        7860,
+        790
       ],
-      "size": {
-        "0": 210,
-        "1": 58
-      },
+      "size": [
+        82,
+        26
+      ],
       "flags": {},
-      "order": 9,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Positive prompt. Describe the subject."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 481,
-      "type": "Note",
-      "pos": [
-        -3370,
-        1430
-      ],
-      "size": {
-        "0": 210,
-        "1": 160
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Positive prompt. Describe overall quality.\n\nThis node adds combines the prompts together."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 473,
-      "type": "Note",
-      "pos": [
-        -2050,
-        720
-      ],
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Get filename from original file. This will be used for the output files."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 105,
-      "type": "Note",
-      "pos": [
-        -1190,
-        1380
-      ],
-      "size": {
-        "0": 410,
-        "1": 200
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "sampling methods:\n\nccsr = normal, untiled, heavy on VRAM\n\nccsr_tiled_mixdiff = tiled, each tile decoded separately, has seams\n\nccsr_tiled_vae_gaussian_weights = seams fixed, can be less accurate and introduce extra noise"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 482,
-      "type": "Note",
-      "pos": [
-        -1170,
-        1260
-      ],
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "CCSR model used for CCSR. Get it on their github page."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 483,
-      "type": "Note",
-      "pos": [
-        -1180,
-        850
-      ],
-      "size": {
-        "0": 250,
-        "1": 100
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Upscale by a factor of 2. Works best if your original image is less than 2k."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 470,
-      "type": "Note",
-      "pos": [
-        1540,
-        1250
-      ],
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Clamps size to 4096 - 4k"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 484,
-      "type": "Note",
-      "pos": [
-        -30,
-        1080
-      ],
-      "size": {
-        "0": 250,
-        "1": 100
-      },
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Resize the original image and use that as a color reference for the color fix. Tiled diffusion methods tends to create color shifts. We want our colors to be consistent."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 485,
-      "type": "Note",
-      "pos": [
-        1510,
-        920
-      ],
-      "size": {
-        "0": 250,
-        "1": 100
-      },
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Base model for SUPIR upscale. Realvis XL works well. You can try other models."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 468,
-      "type": "Note",
-      "pos": [
-        2900,
-        1180
-      ],
-      "size": {
-        "0": 290,
-        "1": 170
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "SUPIR Sampler\nRestore EDM sampler gives the best results in my testing. Even though the recommended settings for Realviz XL is 6 steps - it stills leaves a lot of noise. 24 steps gives the best quality.\n\n\n\nREALVIS XL recommended settings.\nUse Lightning models with DPM++ SDE Karras / DPM++ SDE sampler, 4-6 steps and CFG Scale 1-2"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 486,
-      "type": "Note",
-      "pos": [
-        4950,
-        1070
-      ],
-      "size": {
-        "0": 290,
-        "1": 80
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "SD Ultimate upscale brings us to 8k\n\nAgain we use Realviz XL but you can try other models.\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 487,
-      "type": "Note",
-      "pos": [
-        5640,
-        1370
-      ],
-      "size": {
-        "0": 290,
-        "1": 80
-      },
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Controlnet model to guide the diffusion."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 488,
-      "type": "Note",
-      "pos": [
-        4770,
-        1630
-      ],
-      "size": {
-        "0": 290,
-        "1": 80
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Upscale model to bring us to 8k. NMKD 8x Faces works really good. You can try other upscale models."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 332,
-      "type": "ControlNetApplyAdvanced",
-      "pos": [
-        6200,
-        1470
-      ],
-      "size": {
-        "0": 370,
-        "1": 170
-      },
-      "flags": {},
-      "order": 90,
+      "order": 94,
       "mode": 0,
       "inputs": [
         {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 473
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 474
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 475,
-          "slot_index": 2
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 476
+          "name": "",
+          "type": "*",
+          "link": 845
         }
       ],
       "outputs": [
         {
-          "name": "positive",
-          "type": "CONDITIONING",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            458
+            823,
+            824,
+            825
           ],
-          "shape": 3,
           "slot_index": 0
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            459
-          ],
-          "shape": 3,
-          "slot_index": 1
         }
       ],
       "properties": {
-        "Node name for S&R": "ControlNetApplyAdvanced"
-      },
-      "widgets_values": [
-        0.9,
-        0,
-        1
-      ]
+        "showOutputText": true,
+        "horizontal": false
+      }
     },
     {
-      "id": 334,
-      "type": "PrimitiveNode",
+      "id": 506,
+      "type": "Reroute",
       "pos": [
-        6280,
-        1020
+        7250,
+        1010
       ],
-      "size": {
-        "0": 210,
-        "1": 80
-      },
+      "size": [
+        82,
+        26
+      ],
       "flags": {},
-      "order": 22,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            462
-          ],
-          "widget": {
-            "name": "upscale_by"
-          }
-        }
-      ],
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        2,
-        "fixed"
-      ]
-    },
-    {
-      "id": 339,
-      "type": "Note",
-      "pos": [
-        6210,
-        1710
-      ],
-      "size": {
-        "0": 360,
-        "1": 470
-      },
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "realviz xl - NOTES\n\nUse Turbo models with DPM++ SDE Karras sampler, 4-10 steps and CFG Scale 1-2.5\n\nUse Lightning models with DPM++ SDE Karras / DPM++ SDE sampler, 4-6 steps and CFG Scale 1-2\n\n\nRecommended Negative Prompt:\n\n(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth\n\nor another negative prompt\n\nᅠ\n\nRecommended Generation Parameters:\nSampling Steps: 15-30+\nSampling Method: DPM++ 2M Karras / or another\n\nᅠ\n\nHires Fix Parameters:\n\nUpscaler: 4x-UltraSharp upscaler / or another\n\nDenoising strength: 0.1-0.5\n\nUpscale by: 1.1-1.5\n\nᅠ\n\nOptional Parameters:\n\nENSD: 31337\n\n\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 386,
-      "type": "Image Comparer (rgthree)",
-      "pos": {
-        "0": 7280,
-        "1": 1210,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 1010,
-        "1": 1320
-      },
-      "flags": {},
-      "order": 95,
+      "order": 92,
       "mode": 0,
       "inputs": [
         {
-          "name": "image_a",
-          "type": "IMAGE",
-          "link": 662,
-          "dir": 3
-        },
-        {
-          "name": "image_b",
-          "type": "IMAGE",
-          "link": 591,
-          "dir": 3
+          "name": "",
+          "type": "*",
+          "link": 820
         }
       ],
-      "outputs": [],
-      "title": "Base vs 3rd Pass",
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            844
+          ],
+          "slot_index": 0
+        }
+      ],
       "properties": {
-        "comparer_mode": "Slide"
-      },
-      "widgets_values": [
-        [
-          "/view?filename=rgthree.compare._temp_jvsov_00001_.png&type=temp&subfolder=&rand=0.7599763684005003",
-          "/view?filename=rgthree.compare._temp_jvsov_00002_.png&type=temp&subfolder=&rand=0.04532811448442653"
-        ]
-      ]
+        "showOutputText": true,
+        "horizontal": false
+      }
     },
     {
       "id": 231,
@@ -3633,7 +3475,7 @@
         "1": 980
       },
       "flags": {},
-      "order": 24,
+      "order": 27,
       "mode": 0,
       "outputs": [
         {
@@ -3722,113 +3564,38 @@
         "Node name for S&R": "SDPromptReader"
       },
       "widgets_values": [
-        "dow_txt2image_APFRH_001_001_00922_ (3) EDIT.png",
+        "22BC25C2D650C881474EED764855A0948EB86AD8C3376DB07674EB84B6A04AE1_i2i_00001_.png",
         "image",
         0,
         "",
         "",
-        "No data detected or unsupported format. Please see the README for more details.\nhttps://github.com/receyuki/comfyui-prompt-reader-node#supported-formats"
+        "The workflow is overly complex, or unsupported custom nodes have been used. Please see the README for more details.\nhttps://github.com/receyuki/comfyui-prompt-reader-node#prompt-reader-node"
       ]
     },
     {
-      "id": 452,
-      "type": "SaveImage",
+      "id": 511,
+      "type": "DicksonColorMatch",
       "pos": [
-        3040,
-        1670
+        -230,
+        910
       ],
       "size": {
-        "0": 540,
-        "1": 570
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 85,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 719
-        },
-        {
-          "name": "filename_prefix",
-          "type": "STRING",
-          "link": 718,
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "slot_index": 1
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "dow_txt2image_APFRH_001_001_00205_postpro_002_001_export_upscaled_CCSR_SUPIR_SDUS"
-      ]
-    },
-    {
-      "id": 490,
-      "type": "SaveImage",
-      "pos": [
-        -310,
-        1630
-      ],
-      "size": {
-        "0": 540,
-        "1": 570
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 70,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 765
-        },
-        {
-          "name": "filename_prefix",
-          "type": "STRING",
-          "link": 764,
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "slot_index": 1
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "dow_txt2image_APFRH_001_001_00205_postpro_002_001_export_upscaled_CCSR_SUPIR_SDUS"
-      ]
-    },
-    {
-      "id": 369,
-      "type": "StableSRColorFix",
-      "pos": [
-        -110,
-        950
-      ],
-      "size": {
-        "0": 320,
-        "1": 80
+        "0": 315,
+        "1": 78
       },
       "flags": {},
-      "order": 65,
+      "order": 61,
       "mode": 0,
       "inputs": [
+        {
+          "name": "color_ref_image",
+          "type": "IMAGE",
+          "link": 835
+        },
         {
           "name": "image",
           "type": "IMAGE",
-          "link": 656,
-          "slot_index": 0
-        },
-        {
-          "name": "color_map_image",
-          "type": "IMAGE",
-          "link": 727
+          "link": 836
         }
       ],
       "outputs": [
@@ -3836,26 +3603,142 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            670,
-            679,
-            765
+            837
           ],
           "shape": 3,
           "slot_index": 0
         }
       ],
       "properties": {
-        "Node name for S&R": "StableSRColorFix"
+        "Node name for S&R": "DicksonColorMatch"
       },
       "widgets_values": [
         "Wavelet"
       ]
     },
     {
-      "id": 411,
+      "id": 334,
+      "type": "PrimitiveNode",
+      "pos": [
+        6230,
+        1020
+      ],
+      "size": [
+        270,
+        80
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            462
+          ],
+          "widget": {
+            "name": "upscale_by"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        2,
+        "fixed"
+      ]
+    },
+    {
+      "id": 513,
+      "type": "TTPlanet_Tile_Preprocessor_Simple",
+      "pos": [
+        6220,
+        1170
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 89,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 841
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image_output",
+          "type": "IMAGE",
+          "links": [
+            842
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TTPlanet_Tile_Preprocessor_Simple"
+      },
+      "widgets_values": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": 514,
+      "type": "DicksonColorMatch",
+      "pos": [
+        7460,
+        800
+      ],
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 93,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "color_ref_image",
+          "type": "IMAGE",
+          "link": 843
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 844
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            845
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DicksonColorMatch"
+      },
+      "widgets_values": [
+        "Wavelet"
+      ]
+    },
+    {
+      "id": 410,
       "type": "Reroute",
       "pos": [
-        -1190,
+        -1440,
         780
       ],
       "size": [
@@ -3863,13 +3746,13 @@
         26
       ],
       "flags": {},
-      "order": 45,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 613,
+          "link": 707,
           "widget": {
             "name": "value"
           }
@@ -3880,8 +3763,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            693,
-            766
+            613
           ],
           "slot_index": 0
         }
@@ -3892,142 +3774,202 @@
       }
     },
     {
-      "id": 489,
-      "type": "StringFunction|pysssss",
+      "id": 307,
+      "type": "Reroute",
       "pos": [
-        -740,
-        1660
+        -1440,
+        690
       ],
-      "size": {
-        "0": 400,
-        "1": 224.00001525878906
-      },
+      "size": [
+        82,
+        26
+      ],
       "flags": {},
-      "order": 53,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
-          "name": "text_a",
+          "name": "",
+          "type": "*",
+          "link": 737
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            676
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 209,
+      "type": "SUPIR_conditioner",
+      "pos": [
+        2750,
+        860
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 78,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "SUPIR_model",
+          "type": "SUPIRMODEL",
+          "link": 431,
+          "slot_index": 0
+        },
+        {
+          "name": "latents",
+          "type": "LATENT",
+          "link": 269,
+          "slot_index": 1
+        },
+        {
+          "name": "captions",
           "type": "STRING",
-          "link": 766,
+          "link": null,
           "widget": {
-            "name": "text_a"
+            "name": "captions"
+          }
+        },
+        {
+          "name": "positive_prompt",
+          "type": "STRING",
+          "link": 636,
+          "widget": {
+            "name": "positive_prompt"
+          }
+        },
+        {
+          "name": "negative_prompt",
+          "type": "STRING",
+          "link": 759,
+          "widget": {
+            "name": "negative_prompt"
           }
         }
       ],
       "outputs": [
         {
-          "name": "STRING",
-          "type": "STRING",
+          "name": "positive",
+          "type": "SUPIR_cond_pos",
           "links": [
-            764
+            266
+          ],
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "SUPIR_cond_neg",
+          "links": [
+            267
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SUPIR_conditioner"
+      },
+      "widgets_values": [
+        "photograph of beautiful a (((Victorian French woman))) walking on the meadows smiling, half Japanese half danish woman, Danish woman, white Caucasian woman, Nordic woman, chic bob cut hair, perfect eyes, brown eyes, big breasts, huge cleavage, seductive, sexy, Victorian red lace clothing highly detailed, sky clouds, meadow grass background, Victorian era,\n\npolaroid, film, photography, fashion photography, award-winning photography, aesthetic and beauty, skillful details, no blur, f/1.4, innovative, lens flare, female, vogue cover style,  vibrant (lofi, analog, kodak film)",
+        "bad quality",
+        ""
+      ]
+    },
+    {
+      "id": 512,
+      "type": "DicksonColorMatch",
+      "pos": [
+        4080,
+        840
+      ],
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 82,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "color_ref_image",
+          "type": "IMAGE",
+          "link": 838
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 839
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            840
           ],
           "shape": 3,
           "slot_index": 0
         }
       ],
       "properties": {
-        "Node name for S&R": "StringFunction|pysssss"
+        "Node name for S&R": "DicksonColorMatch"
       },
       "widgets_values": [
-        "append",
-        "no",
-        "",
-        "_UPSCALED_2X",
-        ""
+        "Wavelet"
       ]
     },
     {
-      "id": 399,
-      "type": "Note",
+      "id": 505,
+      "type": "Reroute",
       "pos": [
-        6210,
-        1310
-      ],
-      "size": {
-        "0": 350,
-        "1": 80
-      },
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "blur strength 4 -5 gives the best results\nhigh sharpness but large halo\nneeds more experimentation\n\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 491,
-      "type": "Note",
-      "pos": [
-        6830,
-        890
+        4480,
+        840
       ],
       "size": [
-        330,
-        60
+        82,
+        26
       ],
       "flags": {},
-      "order": 26,
+      "order": 83,
       "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 840
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            816,
+            817,
+            819
+          ],
+          "slot_index": 0
+        }
+      ],
       "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Play with the denoise value. The higher the denoise, more \"detail\" it adds.\n\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 472,
-      "type": "Note",
-      "pos": [
-        -3430,
-        1940
-      ],
-      "size": {
-        "0": 270,
-        "1": 130
-      },
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "General prompt to guide the diffusion.\n\nWorks best when they are general.\n\ncombines with original prompt"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 456,
-      "type": "Note",
-      "pos": [
-        -3480,
-        2130
-      ],
-      "size": {
-        "0": 340,
-        "1": 110
-      },
-      "flags": {},
-      "order": 28,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Negative Prompt not really needed\n\nbad quality, blurry, messy\n(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
+        "showOutputText": true,
+        "horizontal": false
+      }
     }
   ],
   "links": [
@@ -4240,22 +4182,6 @@
       "CONTROL_NET"
     ],
     [
-      476,
-      336,
-      0,
-      332,
-      3,
-      "IMAGE"
-    ],
-    [
-      479,
-      340,
-      0,
-      336,
-      0,
-      "IMAGE"
-    ],
-    [
       481,
       340,
       0,
@@ -4278,46 +4204,6 @@
       314,
       0,
       "*"
-    ],
-    [
-      536,
-      210,
-      0,
-      380,
-      0,
-      "IMAGE"
-    ],
-    [
-      537,
-      252,
-      0,
-      380,
-      1,
-      "IMAGE"
-    ],
-    [
-      543,
-      381,
-      0,
-      252,
-      0,
-      "*"
-    ],
-    [
-      556,
-      320,
-      0,
-      389,
-      0,
-      "IMAGE"
-    ],
-    [
-      561,
-      320,
-      0,
-      390,
-      0,
-      "IMAGE"
     ],
     [
       589,
@@ -4376,14 +4262,6 @@
       "STRING"
     ],
     [
-      641,
-      376,
-      0,
-      355,
-      0,
-      "*"
-    ],
-    [
       650,
       352,
       0,
@@ -4400,76 +4278,12 @@
       "STRING"
     ],
     [
-      655,
-      247,
-      0,
-      413,
-      0,
-      "IMAGE"
-    ],
-    [
-      656,
-      247,
-      0,
-      369,
-      0,
-      "IMAGE"
-    ],
-    [
-      662,
-      389,
-      0,
-      386,
-      0,
-      "IMAGE"
-    ],
-    [
-      663,
-      389,
-      0,
-      393,
-      0,
-      "IMAGE"
-    ],
-    [
-      667,
-      380,
-      0,
-      376,
-      0,
-      "*"
-    ],
-    [
-      668,
-      380,
-      0,
-      377,
-      0,
-      "IMAGE"
-    ],
-    [
-      670,
-      369,
-      0,
-      372,
-      0,
-      "*"
-    ],
-    [
       676,
       307,
       0,
       423,
       0,
       "*"
-    ],
-    [
-      679,
-      369,
-      0,
-      368,
-      0,
-      "IMAGE"
     ],
     [
       687,
@@ -4492,14 +4306,6 @@
       309,
       0,
       427,
-      0,
-      "*"
-    ],
-    [
-      690,
-      427,
-      0,
-      397,
       0,
       "*"
     ],
@@ -4552,28 +4358,12 @@
       "*"
     ],
     [
-      715,
-      389,
-      0,
-      450,
-      0,
-      "IMAGE"
-    ],
-    [
       718,
       451,
       0,
       452,
       1,
       "STRING"
-    ],
-    [
-      719,
-      380,
-      0,
-      452,
-      0,
-      "IMAGE"
     ],
     [
       720,
@@ -4592,60 +4382,12 @@
       "*"
     ],
     [
-      723,
-      397,
-      0,
-      377,
-      1,
-      "IMAGE"
-    ],
-    [
-      724,
-      415,
-      0,
-      454,
-      0,
-      "IMAGE"
-    ],
-    [
-      725,
-      413,
-      0,
-      454,
-      1,
-      "INT"
-    ],
-    [
-      726,
-      413,
-      1,
-      454,
-      2,
-      "INT"
-    ],
-    [
-      727,
-      454,
-      0,
-      369,
-      1,
-      "IMAGE"
-    ],
-    [
       728,
       314,
       0,
       455,
       0,
       "IMAGE"
-    ],
-    [
-      729,
-      455,
-      0,
-      381,
-      0,
-      "*"
     ],
     [
       730,
@@ -4741,38 +4483,6 @@
       0,
       254,
       0,
-      "IMAGE"
-    ],
-    [
-      749,
-      342,
-      0,
-      471,
-      0,
-      "IMAGE"
-    ],
-    [
-      750,
-      390,
-      0,
-      471,
-      1,
-      "INT"
-    ],
-    [
-      751,
-      390,
-      1,
-      471,
-      2,
-      "INT"
-    ],
-    [
-      752,
-      471,
-      0,
-      389,
-      1,
       "IMAGE"
     ],
     [
@@ -4872,20 +4582,220 @@
       "STRING"
     ],
     [
-      765,
-      369,
-      0,
-      490,
-      0,
-      "IMAGE"
-    ],
-    [
       766,
       411,
       0,
       489,
       0,
       "STRING"
+    ],
+    [
+      787,
+      427,
+      0,
+      495,
+      0,
+      "*"
+    ],
+    [
+      789,
+      495,
+      0,
+      397,
+      0,
+      "*"
+    ],
+    [
+      798,
+      495,
+      0,
+      377,
+      1,
+      "IMAGE"
+    ],
+    [
+      808,
+      502,
+      0,
+      372,
+      0,
+      "*"
+    ],
+    [
+      809,
+      502,
+      0,
+      368,
+      0,
+      "IMAGE"
+    ],
+    [
+      810,
+      502,
+      0,
+      490,
+      0,
+      "IMAGE"
+    ],
+    [
+      811,
+      247,
+      0,
+      503,
+      0,
+      "*"
+    ],
+    [
+      813,
+      210,
+      0,
+      504,
+      0,
+      "*"
+    ],
+    [
+      816,
+      505,
+      0,
+      377,
+      0,
+      "IMAGE"
+    ],
+    [
+      817,
+      505,
+      0,
+      452,
+      0,
+      "IMAGE"
+    ],
+    [
+      819,
+      505,
+      0,
+      355,
+      0,
+      "*"
+    ],
+    [
+      820,
+      320,
+      0,
+      506,
+      0,
+      "*"
+    ],
+    [
+      823,
+      507,
+      0,
+      393,
+      0,
+      "IMAGE"
+    ],
+    [
+      824,
+      507,
+      0,
+      450,
+      0,
+      "IMAGE"
+    ],
+    [
+      825,
+      507,
+      0,
+      386,
+      0,
+      "IMAGE"
+    ],
+    [
+      835,
+      415,
+      0,
+      511,
+      0,
+      "IMAGE"
+    ],
+    [
+      836,
+      503,
+      0,
+      511,
+      1,
+      "IMAGE"
+    ],
+    [
+      837,
+      511,
+      0,
+      502,
+      0,
+      "*"
+    ],
+    [
+      838,
+      495,
+      0,
+      512,
+      0,
+      "IMAGE"
+    ],
+    [
+      839,
+      504,
+      0,
+      512,
+      1,
+      "IMAGE"
+    ],
+    [
+      840,
+      512,
+      0,
+      505,
+      0,
+      "*"
+    ],
+    [
+      841,
+      340,
+      0,
+      513,
+      0,
+      "IMAGE"
+    ],
+    [
+      842,
+      513,
+      0,
+      332,
+      3,
+      "IMAGE"
+    ],
+    [
+      843,
+      403,
+      0,
+      514,
+      0,
+      "IMAGE"
+    ],
+    [
+      844,
+      506,
+      0,
+      514,
+      1,
+      "IMAGE"
+    ],
+    [
+      845,
+      514,
+      0,
+      507,
+      0,
+      "*"
     ]
   ],
   "groups": [
@@ -4954,10 +4864,10 @@
   "extra": {
     "groupNodes": {},
     "ds": {
-      "scale": 0.43871129961823413,
+      "scale": 0.9404166326822242,
       "offset": {
-        "0": -2800.216682373005,
-        "1": -27.549929917804775
+        "0": -2580.160947575008,
+        "1": -604.071508076103
       }
     }
   },
