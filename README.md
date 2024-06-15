@@ -1,66 +1,58 @@
-# Dickson's Sci-Fi Enhance Upscale
+# Dickson's Sci-Fi Enhance Upscale  
 
-This a ComfyUI workflow to upscale images to 4K or 8K.\
-Great for general upscale on photos with Magnific-like results.
+This a ComfyUI workflow to upscale images to 4K or 8K.  
+Great for general upscale on photos with Magnific-like results.  
 
-This workflow upscales in 3 stages.
+This workflow upscales in 3 stages.  
 
-The first stage utilizes CCSR - 2x upscale.\
-Second stage utilizes SUPIR - 4K size.\
-Third stage utilizes SD ULTIMATE UPSCALE - 8K size.
+The first stage utilizes CCSR - 2x upscale.  
+Second stage utilizes SUPIR - 4K size.  
+Third stage utilizes SD ULTIMATE UPSCALE - 8K size.  
 
-The workflow is designed to save the result of each stage.
-
-
-
-
-# Samples
-
-![image info](sample_1_1.png)\
-![image info](sample_1_2.png)\
-![image info](sample_2_1.png)\
-![image info](sample_2_2.png)\
-![image info](workflow.png)
-
-
-
-# ETA
-
-Using a RTX 4090:\
-First stage and second stage upscale combined takes about 8 minutes.\
-Running all three stages takes about 18 - 22 minutes.
+The workflow is designed to save the result of each stage.  
 
 
 
 
-# Models Used
+# Samples  
 
-RealVisXL V4.0 Lightning\
-[https://civitai.com/models/139562/realvisxl-v40](https://civitai.com/models/139562/realvisxl-v40)
+![image info](sample_1_1.png)  
+![image info](sample_1_2.png)  
+![image info](sample_2_1.png)  
+![image info](sample_2_2.png)  
+![image info](workflow.png)  
 
-NKMD 8x Superscale Faces - put this in the comfyui upscaler folder:\
+
+
+# ETA  
+
+Using a RTX 4090:  
+First stage and second stage upscale combined takes about 8 minutes.  
+Running all three stages takes about 18 - 22 minutes.  
+
+
+# Models Used  
+
+RealVisXL V4.0 Lightning  
+[https://civitai.com/models/139562/realvisxl-v40](https://civitai.com/models/139562/realvisxl-v40)  
+
+NKMD 8x Superscale Faces - put this in the comfyui upscaler folder:  
 [https://icedrive.net/s/d3adUbHsOO](https://icedrive.net/s/d3adUbHsOO)
 
-TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic\
-Get the v2 version:\
-[https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main](https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main)
-
-NOTE - You'll need TTPlanet's preprocessor node as well.\
-Put the the ttplanet-controlnet folder into your comfyui\custom_nodes folder
+TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic  
+Get the v2 version:  
+[https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main](https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/tree/main)  
 
 
 
+# Nodes Required    
+This workflow requires my custom nodes. Please get them here:  
+[https://github.com/dicksondickson/ComfyUI-Dickson-Nodes](https://github.com/dicksondickson/ComfyUI-Dickson-Nodes)  
 
-# Nodes Used
 
-There are a few custom nodes in use and they can be installed when you load up the workflow via ComfyUI Manager.
+There are other custom nodes in use and they can be installed when you load up the workflow via ComfyUI Manager.
 
 If you are unable to find them with the ComfyUI manager - these are the nodes that the workflow uses:
-
-
-StableSR
-[https://github.com/gameltb/Comfyui-StableSR](https://github.com/gameltb/Comfyui-StableSR)
-
 
 SUPIR
 [https://github.com/kijai/ComfyUI-SUPIR](https://https://github.com/kijai/ComfyUI-SUPIR)
