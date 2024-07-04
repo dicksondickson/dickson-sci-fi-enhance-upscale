@@ -13,6 +13,7 @@ The workflow is designed to save the result of each stage.
 
 
 # Changelog  
+v5 - Optimized steps.
 v4 - Optimized quality and reworded annotations.
 
 
