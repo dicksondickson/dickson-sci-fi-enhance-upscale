@@ -12,7 +12,8 @@ Third stage utilizes SD ULTIMATE UPSCALE - 8K size.
 The workflow is designed to save the result of each stage.  
 
 
-# Changelog  
+# Changelog 
+v6 - Fixed seams issue when using TiledEDMRestore in SUPIR. Should now work with system is less VRAM. 
 v5 - Optimized steps.  
 v4 - Optimized quality and reworded annotations.  
 
