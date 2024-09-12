@@ -14,6 +14,7 @@ The workflow is designed to save the result of each stage.
 
 # Changelog  
 
+v9 - Optimize speed. Use updated controlnet tile node. Use RealvizXL 5 model.    
 v8 - Optimize quality. Use updated image loader node.    
 v7 - Replace image loader with custom load. Remove SD prompt reader depedency. Split version Tiled and Full. Tiled sets TiledEDMRestore in SUPIR and can run on systems with low VRAM.    
 v6 - Fixed seams issue when using TiledEDMRestore in SUPIR. Should now work with system with less VRAM. Tested on 2080ti.  
