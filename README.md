@@ -6,18 +6,6 @@ Great for general upscale on photos with Magnific-like results.
 This workflow upscales images in multiple stages using a combination of upscaling models, CCSR, SUPIR and SD Ulitmate Upscale. Each workflow is tuned to a specific resolution and different speed variants. Enjoy!   
 
 
-# Changelog  
-
-2024/09/17 - Reworked the upscale workflow and broke how different versions targeting different resolutions.    
-v9 - Optimize speed. Use updated controlnet tile node. Use RealvizXL 5 model.    
-v8 - Optimize quality. Use updated image loader node.    
-v7 - Replace image loader with custom load. Remove SD prompt reader depedency. Split version Tiled and Full. Tiled sets TiledEDMRestore in SUPIR and can run on systems with low VRAM.    
-v6 - Fixed seams issue when using TiledEDMRestore in SUPIR. Should now work with system with less VRAM. Tested on 2080ti.  
-v5 - Optimized steps.  
-v4 - Optimized quality and reworded annotations.  
-
-
-
 # BENCHMARK  
 
 System specs: RTX 4090 + AMD Ryzen 9950X    
@@ -31,6 +19,22 @@ System specs: RTX 4090 + AMD Ryzen 9950X
 
 2K Fast: 105 - 110 seconds   
 2K Lightning: 70 - 85 seconds   
+
+
+
+# Changelog  
+
+2024/09/17 - Reworked the upscale workflow and broke how different versions targeting different resolutions.    
+v9 - Optimize speed. Use updated controlnet tile node. Use RealvizXL 5 model.    
+v8 - Optimize quality. Use updated image loader node.    
+v7 - Replace image loader with custom load. Remove SD prompt reader depedency. Split version Tiled and Full. Tiled sets TiledEDMRestore in SUPIR and can run on systems with low VRAM.    
+v6 - Fixed seams issue when using TiledEDMRestore in SUPIR. Should now work with system with less VRAM. Tested on 2080ti.  
+v5 - Optimized steps.  
+v4 - Optimized quality and reworded annotations.  
+
+
+
+
 
 
 # Samples  
