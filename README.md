@@ -24,7 +24,7 @@ System specs: RTX 4090 + AMD Ryzen 9950X
 
 # Changelog  
 
-2024/09/17 - Reworked the upscale workflow and broke how different versions targeting different resolutions.    
+2024/09/17 - Reworked the upscale workflows.    
 v9 - Optimize speed. Use updated controlnet tile node. Use RealvizXL 5 model.    
 v8 - Optimize quality. Use updated image loader node.    
 v7 - Replace image loader with custom load. Remove SD prompt reader depedency. Split version Tiled and Full. Tiled sets TiledEDMRestore in SUPIR and can run on systems with low VRAM.    
