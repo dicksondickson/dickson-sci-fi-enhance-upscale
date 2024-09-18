@@ -8,17 +8,17 @@ This workflow upscales images in multiple stages using a combination of upscalin
 
 # BENCHMARK  
 
-System specs: RTX 4090 + AMD Ryzen 9950X    
+**System specs:** RTX 4090 + AMD Ryzen 9950X    
 
-8K Advanced: 16 - 24 minutes   
-8K Fast: 10 - 16 minutes   
+**8K Advanced:** 16 - 24 minutes   
+**8K Fast:** 10 - 16 minutes   
 
-4K Advanced: 6 - 12 minutes   
-4K Fast: 4.5 - 8 minutes   
-4K Lightning: 2 - 3.5 mintues   
+**4K Advanced:** 6 - 12 minutes   
+**4K Fast:** 4.5 - 8 minutes   
+**4K Lightning:** 2 - 3.5 mintues   
 
-2K Fast: 105 - 110 seconds   
-2K Lightning: 70 - 85 seconds   
+**2K Fast:** 105 - 110 seconds   
+**2K Lightning:** 70 - 85 seconds   
 
 
 
