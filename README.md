@@ -1,29 +1,33 @@
 # Dickson's Sci-Fi Enhance Upscale  
 
 This a ComfyUI workflow to upscale images to 2K, 4K, or 8K.  
-Great for general upscale on photos with Magnific-like results.  
+Great for general upscale on photos and illustrations with Magnific-like results.  
 
 This workflow upscales images in multiple stages using a combination of upscaling models, CCSR, SUPIR and SD Ulitmate Upscale. Each workflow is tuned to a specific resolution with different speed variants. Enjoy!   
 
 
-# BENCHMARK  
+# BENCHMARK    
 
 **System specs:** RTX 4090 + AMD Ryzen 9950X    
 
-**8K Advanced:** 16 - 24 minutes   
-**8K Fast:** 10 - 16 minutes   
+**8K Pro Max (Flux):** 24 - 33 minutes   
+**4K Pro Max (Flux):** 7 - 11 minutes    
 
-**4K Advanced:** 6 - 12 minutes   
-**4K Fast:** 4.5 - 8 minutes   
-**4K Lightning:** 2 - 3.5 mintues   
+**8K Advanced (SDXL):** 16 - 24 minutes   
+**8K Fast (SDXL):** 10 - 16 minutes   
 
-**2K Fast:** 105 - 110 seconds   
-**2K Lightning:** 70 - 85 seconds   
+**4K Advanced (SDXL):** 6 - 12 minutes   
+**4K Fast (SDXL):** 4.5 - 8 minutes    
+**4K Lightning (Upscalers):** 2 - 3.5 mintues   
+
+**2K Fast (Upscalers):** 105 - 110 seconds    
+**2K Lightning (Upscalers):** 70 - 85 seconds    
 
 
 
 # Changelog  
 
+2024/09/17 - Bug fixes. Added Pro Max version that uses Flux.    
 2024/09/17 - Reworked the upscale workflows.    
 v9 - Optimize speed. Use updated controlnet tile node. Use RealvizXL 5 model.    
 v8 - Optimize quality. Use updated image loader node.    
@@ -51,6 +55,10 @@ v4 - Optimized quality and reworded annotations.
 
 # Models Required  
 
+
+[Flux.1 Dev ](https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main)     
+
+[Jasper AI Controlnet for FLux ](https://huggingface.co/spaces/jasperai/Flux.1-dev-Controlnet-Upscaler/tree/main)    
 
 [Boltning - HyperD ](https://civitai.com/models/413466?modelVersionId=488645)       
 
