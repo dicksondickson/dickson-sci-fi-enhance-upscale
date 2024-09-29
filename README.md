@@ -58,7 +58,7 @@ v4 - Optimized quality and reworded annotations.
 
 [Flux.1 Dev ](https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main)     
 
-[Jasper AI Controlnet for FLux ](https://huggingface.co/spaces/jasperai/Flux.1-dev-Controlnet-Upscaler/tree/main)    
+[Jasper AI Controlnet for FLux ](https://huggingface.co/jasperai/Flux.1-dev-Controlnet-Upscaler)    
 
 [Boltning - HyperD ](https://civitai.com/models/413466?modelVersionId=488645)       
 
