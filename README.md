@@ -43,10 +43,11 @@ v4 - Optimized quality and reworded annotations.
 
 # Samples  
 
-![image info](/images/sample_1_1.png)  
-![image info](/images/sample_1_2.png)  
-![image info](/images/sample2.jpg)  
-![image info](/images/workflow.png)  
+![image info](/images/sample_1_1.png)    
+![image info](/images/sample_1_2.png)    
+![image info](/images/sample_1_3.jpg)   
+![image info](/images/sample_1_4.jpg)     
+![image info](/images/workflow.png)    
 
 
 
