@@ -14,7 +14,7 @@
         26
       ],
       "flags": {},
-      "order": 32,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -438,7 +438,7 @@
         "",
         "_UPSCALED_STAGE_1",
         "",
-        "ComfyUI_00033__UPSCALED_STAGE_1"
+        "ComfyUI_00038__UPSCALED_STAGE_1"
       ]
     },
     {
@@ -479,12 +479,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rmrrr_00001_.png&type=temp&subfolder=&preview=jpeg;89&rand=0.3060683449672956"
+            "url": "/api/view?filename=rgthree.compare._temp_pxjev_00009_.png&type=temp&subfolder=&rand=0.6835811815368396"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rmrrr_00002_.png&type=temp&subfolder=&preview=jpeg;89&rand=0.33416148897154974"
+            "url": "/api/view?filename=rgthree.compare._temp_pxjev_00010_.png&type=temp&subfolder=&rand=0.07488589002781287"
           }
         ]
       ]
@@ -538,7 +538,7 @@
         26
       ],
       "flags": {},
-      "order": 43,
+      "order": 44,
       "mode": 0,
       "inputs": [
         {
@@ -626,12 +626,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_jkrcu_00001_.png&type=temp&subfolder=&preview=jpeg;89&rand=0.17395965321978235"
+            "url": "/api/view?filename=rgthree.compare._temp_qunan_00007_.png&type=temp&subfolder=&rand=0.9752613056802962"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_jkrcu_00002_.png&type=temp&subfolder=&preview=jpeg;89&rand=0.30376970108058166"
+            "url": "/api/view?filename=rgthree.compare._temp_qunan_00008_.png&type=temp&subfolder=&rand=0.22438451006150062"
           }
         ]
       ]
@@ -922,6 +922,39 @@
       }
     },
     {
+      "id": 542,
+      "type": "UpscaleModelLoader",
+      "pos": {
+        "0": -1100,
+        "1": 880
+      },
+      "size": {
+        "0": 575.7213745117188,
+        "1": 58
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            878
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4xRealWebPhoto_v4_dat2/4xRealWebPhoto_v4_dat2.safetensors"
+      ]
+    },
+    {
       "id": 325,
       "type": "CR Combine Prompt",
       "pos": {
@@ -933,7 +966,7 @@
         "1": 410
       },
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -988,7 +1021,7 @@
         "1": 160
       },
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1013,7 +1046,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1038,7 +1071,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1050,6 +1083,75 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 333,
+      "type": "ControlNetLoader",
+      "pos": {
+        "0": 4305.55322265625,
+        "1": 1495.201904296875
+      },
+      "size": {
+        "0": 850,
+        "1": 80
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            475
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "jasperai/Flux.1-dev-Controlnet-Upscaler/diffusion_pytorch_model.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 319,
+      "type": "UpscaleModelLoader",
+      "pos": {
+        "0": 4641.55419921875,
+        "1": 1641.201171875
+      },
+      "size": {
+        "0": 509.6257019042969,
+        "1": 58
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            461
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "NMKD/8x_NMKD-Faces_160000_G.pth"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 506,
@@ -1176,7 +1278,7 @@
         "1": 88.02262115478516
       },
       "flags": {},
-      "order": 9,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1279,7 +1381,7 @@
         26
       ],
       "flags": {},
-      "order": 38,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -1304,6 +1406,43 @@
       }
     },
     {
+      "id": 666,
+      "type": "DualCLIPLoader",
+      "pos": {
+        "0": 4421.35693359375,
+        "1": 1191.816650390625
+      },
+      "size": {
+        "0": 523.3331298828125,
+        "1": 113.93798828125
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            1144
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader"
+      },
+      "widgets_values": [
+        "t5/google_t5-v1_1-xxl_encoderonly-fp8_e4m3fn.safetensors",
+        "clip_l.safetensors",
+        "flux"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 570,
       "type": "VAELoader",
       "pos": {
@@ -1315,7 +1454,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 10,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1351,7 +1490,7 @@
         26
       ],
       "flags": {},
-      "order": 31,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -1387,7 +1526,7 @@
         26
       ],
       "flags": {},
-      "order": 39,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -1486,6 +1625,42 @@
       "bgcolor": "#353"
     },
     {
+      "id": 664,
+      "type": "UNETLoader",
+      "pos": {
+        "0": 4462.35693359375,
+        "1": 1039.817626953125
+      },
+      "size": {
+        "0": 480.81829833984375,
+        "1": 82
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1138
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "FLUX/flux1-dev-fp8.safetensors",
+        "fp8_e4m3fn"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 589,
       "type": "Reroute",
       "pos": {
@@ -1535,7 +1710,7 @@
         "1": 490
       },
       "flags": {},
-      "order": 11,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1590,7 +1765,7 @@
         "1": 116
       },
       "flags": {},
-      "order": 33,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -1643,7 +1818,7 @@
         26
       ],
       "flags": {},
-      "order": 42,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -1943,6 +2118,57 @@
       ]
     },
     {
+      "id": 717,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 938.1158447265625,
+        "1": 1165.1578369140625
+      },
+      "size": {
+        "0": 670,
+        "1": 110
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1217
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            1234
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "Boltning/boltningRealistic_hyperD.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 718,
       "type": "Reroute",
       "pos": {
@@ -2103,7 +2329,7 @@
         "1": 200.78550720214844
       },
       "flags": {},
-      "order": 12,
+      "order": 18,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -2128,7 +2354,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 13,
+      "order": 19,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -2232,7 +2458,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 37,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -2273,7 +2499,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 14,
+      "order": 20,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2404,12 +2630,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rzxyo_00001_.png&type=temp&subfolder=&preview=jpeg;89&rand=0.6907158263221322"
+            "url": "/api/view?filename=rgthree.compare._temp_pngux_00009_.png&type=temp&subfolder=&rand=0.21140619487904622"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rzxyo_00002_.png&type=temp&subfolder=&preview=jpeg;89&rand=0.7474854074977251"
+            "url": "/api/view?filename=rgthree.compare._temp_pngux_00010_.png&type=temp&subfolder=&rand=0.3161199712933044"
           }
         ]
       ]
@@ -2598,6 +2824,72 @@
         "showOutputText": true,
         "horizontal": false
       }
+    },
+    {
+      "id": 716,
+      "type": "SUPIR_model_loader_v2",
+      "pos": {
+        "0": 1688.11572265625,
+        "1": 1015.158203125
+      },
+      "size": {
+        "0": 410,
+        "1": 170
+      },
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1217,
+          "slot_index": 0
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1218
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 1219
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SUPIR_model",
+          "type": "SUPIRMODEL",
+          "links": [
+            1205,
+            1209
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "SUPIR_VAE",
+          "type": "SUPIRVAE",
+          "links": [
+            1203,
+            1213
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SUPIR_model_loader_v2"
+      },
+      "widgets_values": [
+        "supir/SUPIR-v0Q_fp16.safetensors",
+        false,
+        "auto",
+        false
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 681,
@@ -3339,7 +3631,7 @@
         "1": 415.3601989746094
       },
       "flags": {},
-      "order": 15,
+      "order": 21,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -3394,7 +3686,7 @@
         "",
         "_UPSCALED_STAGE_3",
         "",
-        "ComfyUI_00033__UPSCALED_STAGE_3"
+        "ComfyUI_00038__UPSCALED_STAGE_3"
       ]
     },
     {
@@ -3409,7 +3701,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 16,
+      "order": 22,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -3434,7 +3726,7 @@
         "1": 76
       },
       "flags": {},
-      "order": 36,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -3460,6 +3752,39 @@
       "widgets_values": [
         "",
         "Width: 1024\nHeight: 1024"
+      ]
+    },
+    {
+      "id": 750,
+      "type": "UpscaleModelLoader",
+      "pos": {
+        "0": -1070,
+        "1": 1860
+      },
+      "size": {
+        "0": 575.7213745117188,
+        "1": 58
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            1319
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4xNomos2_hq_dat2/4xNomos2_hq_dat2.pth"
       ]
     },
     {
@@ -3541,6 +3866,39 @@
       }
     },
     {
+      "id": 630,
+      "type": "UpscaleModelLoader",
+      "pos": {
+        "0": -1070,
+        "1": 1390
+      },
+      "size": {
+        "0": 575.7213745117188,
+        "1": 58
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            1097
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "OmniSR/OmniSR_X4_DF2K.pth"
+      ]
+    },
+    {
       "id": 752,
       "type": "ImageResize+",
       "pos": {
@@ -3610,6 +3968,60 @@
         "keep proportion",
         "always",
         0
+      ]
+    },
+    {
+      "id": 754,
+      "type": "MathExpression|pysssss",
+      "pos": {
+        "0": -800,
+        "1": 2130
+      },
+      "size": {
+        "0": 210,
+        "1": 116
+      },
+      "flags": {},
+      "order": 65,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": 1326
+        },
+        {
+          "name": "b",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        },
+        {
+          "name": "c",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            1322,
+            1323
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "a / 2"
       ]
     },
     {
@@ -3766,7 +4178,7 @@
         "1": 111.68148040771484
       },
       "flags": {},
-      "order": 17,
+      "order": 25,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -3791,7 +4203,7 @@
         26
       ],
       "flags": {},
-      "order": 34,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -3827,7 +4239,7 @@
         26
       ],
       "flags": {},
-      "order": 44,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
@@ -3866,7 +4278,7 @@
         "1": 84.43502807617188
       },
       "flags": {},
-      "order": 35,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -3896,7 +4308,7 @@
         [
           "graphis-01-25"
         ],
-        "ComfyUI_00033_"
+        "ComfyUI_00038_"
       ]
     },
     {
@@ -3911,7 +4323,7 @@
         "1": 76.18611145019531
       },
       "flags": {},
-      "order": 18,
+      "order": 26,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4065,7 +4477,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 19,
+      "order": 27,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4378,12 +4790,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_bzctu_00001_.png&type=temp&subfolder=&preview=jpeg;89&rand=0.2524150601767148"
+            "url": "/api/view?filename=rgthree.compare._temp_srgox_00007_.png&type=temp&subfolder=&rand=0.9245277668574834"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_bzctu_00002_.png&type=temp&subfolder=&preview=jpeg;89&rand=0.44040734131507486"
+            "url": "/api/view?filename=rgthree.compare._temp_srgox_00008_.png&type=temp&subfolder=&rand=0.8303265018681696"
           }
         ]
       ]
@@ -4400,7 +4812,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 20,
+      "order": 28,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4468,7 +4880,76 @@
         "",
         "_UPSCALED_STAGE_2",
         "",
-        "ComfyUI_00033__UPSCALED_STAGE_2"
+        "ComfyUI_00038__UPSCALED_STAGE_2"
+      ]
+    },
+    {
+      "id": 538,
+      "type": "DicksonLoadImage",
+      "pos": {
+        "0": -2501,
+        "1": 1072
+      },
+      "size": {
+        "0": 747.1782836914062,
+        "1": 819.6154174804688
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            991
+          ],
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "FILENAME",
+          "type": "STRING",
+          "links": [
+            872
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "IMAGE WIDTH INT",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "IMAGE HEIGHT INT",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "IMAGE INFO",
+          "type": "STRING",
+          "links": [
+            871
+          ],
+          "slot_index": 5,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DicksonLoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_00038_.png",
+        "image"
       ]
     },
     {
@@ -4600,487 +5081,6 @@
       "widgets_values": [
         "Wavelet"
       ]
-    },
-    {
-      "id": 754,
-      "type": "MathExpression|pysssss",
-      "pos": {
-        "0": -800,
-        "1": 2130
-      },
-      "size": {
-        "0": 210,
-        "1": 116
-      },
-      "flags": {},
-      "order": 65,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "a",
-          "type": "INT,FLOAT,IMAGE,LATENT",
-          "link": 1326
-        },
-        {
-          "name": "b",
-          "type": "INT,FLOAT,IMAGE,LATENT",
-          "link": null
-        },
-        {
-          "name": "c",
-          "type": "INT,FLOAT,IMAGE,LATENT",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            1322,
-            1323
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "a / 2"
-      ]
-    },
-    {
-      "id": 538,
-      "type": "DicksonLoadImage",
-      "pos": {
-        "0": -2501,
-        "1": 1072
-      },
-      "size": {
-        "0": 747.1782836914062,
-        "1": 819.6154174804688
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            991
-          ],
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "FILENAME",
-          "type": "STRING",
-          "links": [
-            872
-          ],
-          "slot_index": 2,
-          "shape": 3
-        },
-        {
-          "name": "IMAGE WIDTH INT",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "IMAGE HEIGHT INT",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "IMAGE INFO",
-          "type": "STRING",
-          "links": [
-            871
-          ],
-          "slot_index": 5,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DicksonLoadImage"
-      },
-      "widgets_values": [
-        "ComfyUI_00033_.png",
-        "image"
-      ]
-    },
-    {
-      "id": 542,
-      "type": "UpscaleModelLoader",
-      "pos": {
-        "0": -1100,
-        "1": 880
-      },
-      "size": {
-        "0": 575.7213745117188,
-        "1": 58
-      },
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "UPSCALE_MODEL",
-          "type": "UPSCALE_MODEL",
-          "links": [
-            878
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UpscaleModelLoader"
-      },
-      "widgets_values": [
-        "4xRealWebPhoto_v4_dat2\\4xRealWebPhoto_v4_dat2.safetensors"
-      ]
-    },
-    {
-      "id": 630,
-      "type": "UpscaleModelLoader",
-      "pos": {
-        "0": -1070,
-        "1": 1390
-      },
-      "size": {
-        "0": 575.7213745117188,
-        "1": 58
-      },
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "UPSCALE_MODEL",
-          "type": "UPSCALE_MODEL",
-          "links": [
-            1097
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UpscaleModelLoader"
-      },
-      "widgets_values": [
-        "OmniSR\\OmniSR_X4_DF2K.pth"
-      ]
-    },
-    {
-      "id": 750,
-      "type": "UpscaleModelLoader",
-      "pos": {
-        "0": -1070,
-        "1": 1860
-      },
-      "size": {
-        "0": 575.7213745117188,
-        "1": 58
-      },
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "UPSCALE_MODEL",
-          "type": "UPSCALE_MODEL",
-          "links": [
-            1319
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UpscaleModelLoader"
-      },
-      "widgets_values": [
-        "4xNomos2_hq_dat2\\4xNomos2_hq_dat2.pth"
-      ]
-    },
-    {
-      "id": 717,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 938.1158447265625,
-        "1": 1165.1578369140625
-      },
-      "size": {
-        "0": 670,
-        "1": 110
-      },
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1217
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            1234
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "Boltning\\boltningRealistic_hyperD.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 716,
-      "type": "SUPIR_model_loader_v2",
-      "pos": {
-        "0": 1688.11572265625,
-        "1": 1015.158203125
-      },
-      "size": {
-        "0": 410,
-        "1": 170
-      },
-      "flags": {},
-      "order": 45,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 1217,
-          "slot_index": 0
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 1218
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 1219
-        }
-      ],
-      "outputs": [
-        {
-          "name": "SUPIR_model",
-          "type": "SUPIRMODEL",
-          "links": [
-            1205,
-            1209
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "SUPIR_VAE",
-          "type": "SUPIRVAE",
-          "links": [
-            1203,
-            1213
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SUPIR_model_loader_v2"
-      },
-      "widgets_values": [
-        "supir\\SUPIR-v0Q_fp16.safetensors",
-        false,
-        "auto",
-        false
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 319,
-      "type": "UpscaleModelLoader",
-      "pos": {
-        "0": 4641.55419921875,
-        "1": 1641.201171875
-      },
-      "size": {
-        "0": 509.6257019042969,
-        "1": 58
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "UPSCALE_MODEL",
-          "type": "UPSCALE_MODEL",
-          "links": [
-            461
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UpscaleModelLoader"
-      },
-      "widgets_values": [
-        "NMKD\\8x_NMKD-Faces_160000_G.pth"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 333,
-      "type": "ControlNetLoader",
-      "pos": {
-        "0": 4305.55322265625,
-        "1": 1495.201904296875
-      },
-      "size": {
-        "0": 850,
-        "1": 80
-      },
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            475
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "jasperai\\Flux.1-dev-Controlnet-Upscaler\\diffusion_pytorch_model.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 666,
-      "type": "DualCLIPLoader",
-      "pos": {
-        "0": 4421.35693359375,
-        "1": 1191.816650390625
-      },
-      "size": {
-        "0": 523.3331298828125,
-        "1": 113.93798828125
-      },
-      "flags": {},
-      "order": 28,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            1144
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DualCLIPLoader"
-      },
-      "widgets_values": [
-        "t5\\google_t5-v1_1-xxl_encoderonly-fp8_e4m3fn.safetensors",
-        "clip_l.safetensors",
-        "flux"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 664,
-      "type": "UNETLoader",
-      "pos": {
-        "0": 4462.35693359375,
-        "1": 1039.817626953125
-      },
-      "size": {
-        "0": 480.81829833984375,
-        "1": 82
-      },
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1138
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UNETLoader"
-      },
-      "widgets_values": [
-        "FLUX\\flux1-dev-fp8.safetensors",
-        "fp8_e4m3fn"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     }
   ],
   "links": [
@@ -6175,36 +6175,12 @@
   ],
   "groups": [
     {
-      "title": "2 - Load image and filename",
+      "title": "4 - STAGE 2 - SUPIR",
       "bounding": [
-        -2536,
+        896,
         590,
-        1170,
-        1320
-      ],
-      "color": "#3f789e",
-      "font_size": 48,
-      "flags": {}
-    },
-    {
-      "title": "5 - STAGE 3 - SD ULTIMATE",
-      "bounding": [
-        4246,
-        594,
-        5307,
-        1962
-      ],
-      "color": "#3f789e",
-      "font_size": 48,
-      "flags": {}
-    },
-    {
-      "title": "1 - Prompt",
-      "bounding": [
-        -3410,
-        594,
-        643,
-        1763
+        3273,
+        1775
       ],
       "color": "#3f789e",
       "font_size": 48,
@@ -6223,12 +6199,36 @@
       "flags": {}
     },
     {
-      "title": "4 - STAGE 2 - SUPIR",
+      "title": "1 - Prompt",
       "bounding": [
-        896,
+        -3410,
+        594,
+        643,
+        1763
+      ],
+      "color": "#3f789e",
+      "font_size": 48,
+      "flags": {}
+    },
+    {
+      "title": "5 - STAGE 3 - SD ULTIMATE",
+      "bounding": [
+        4246,
+        594,
+        5307,
+        1962
+      ],
+      "color": "#3f789e",
+      "font_size": 48,
+      "flags": {}
+    },
+    {
+      "title": "2 - Load image and filename",
+      "bounding": [
+        -2536,
         590,
-        3273,
-        1775
+        1170,
+        1320
       ],
       "color": "#3f789e",
       "font_size": 48,
@@ -6238,10 +6238,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5209868481924388,
+      "scale": 1.0152559799477272,
       "offset": [
-        -1820.4796833596445,
-        -48.78137309920549
+        1364.1925362307632,
+        -742.4655208202385
       ]
     },
     "groupNodes": {}
