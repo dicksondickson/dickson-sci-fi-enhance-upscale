@@ -27,6 +27,7 @@ This workflow upscales images in multiple stages using a combination of upscalin
 
 # Changelog  
 
+2024/09/30 - Separated ProMax version into 4K and 8K as the math nodes is causing problems.     
 2024/09/29 - Bug fixes. Added Pro Max version that uses Flux.    
 2024/09/17 - Reworked the upscale workflows.    
 v9 - Optimize speed. Use updated controlnet tile node. Use RealvizXL 5 model.    
