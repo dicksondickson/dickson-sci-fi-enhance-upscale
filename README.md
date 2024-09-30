@@ -27,7 +27,7 @@ This workflow upscales images in multiple stages using a combination of upscalin
 
 # Changelog  
 
-2024/09/17 - Bug fixes. Added Pro Max version that uses Flux.    
+2024/09/29 - Bug fixes. Added Pro Max version that uses Flux.    
 2024/09/17 - Reworked the upscale workflows.    
 v9 - Optimize speed. Use updated controlnet tile node. Use RealvizXL 5 model.    
 v8 - Optimize quality. Use updated image loader node.    
@@ -43,11 +43,11 @@ v4 - Optimized quality and reworded annotations.
 
 # Samples  
 
-![image info](/images/sample_1_1.png)    
-![image info](/images/sample_1_2.png)    
+![image info](/images/sample_1_1.jpg)    
+![image info](/images/sample_1_2.jpg)    
 ![image info](/images/sample_1_3.jpg)   
 ![image info](/images/sample_1_4.jpg)     
-![image info](/images/workflow.png)    
+![image info](/images/workflow.jpg)     
 
 
 
