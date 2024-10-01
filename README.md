@@ -58,6 +58,7 @@ Uses upscaler models only. 2K target resolution.
 
 # Changelog  
 
+2024/10/01 - Updated notes in workflows.   
 2024/09/30 - Separated ProMax version into 4K and 8K as the math nodes is causing problems.     
 2024/09/29 - Bug fixes. Added Pro Max version that uses Flux.    
 2024/09/17 - Reworked the upscale workflows.    
