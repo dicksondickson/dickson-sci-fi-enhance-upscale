@@ -27,7 +27,7 @@ Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, and SDXL models. 4K 
 **4K Lightning**   
 Uses upscaler models only. 4K target resolution.    
 
-**2K Fast**
+**2K Fast**   
 Uses upscaler models only. 2K target resolution.    
 
 **2K Lightning**   
