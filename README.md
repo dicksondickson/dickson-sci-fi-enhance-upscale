@@ -13,7 +13,10 @@ These workflows upscales images in multiple stages using a combination of upscal
 Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and Flux FP8 models. 8K target resolution.      
 
 **8K Advanced**   
-Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.        
+Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.    
+
+**8K Fast**   
+Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.  
 
 **4K Pro Max**   
 Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and Flux FP8. 4K target resolution.      
