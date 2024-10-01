@@ -3,7 +3,7 @@
 These are ComfyUI workflows to upscale images to 2K, 4K, or 8K.  
 Great for general upscale on photos and illustrations with Magnific-like results.  
 
-These workflows upscales images in multiple stages using a combination of upscaling models, CCSR, SUPIR and Ulitmate SD Upscale, upscaling models, SDXL and Flux. Each workflow is tuned to a specific resolution with different speed variants. Enjoy!   
+These workflows upscales images in multiple stages using a combination of upscaling models, CCSR, SUPIR and Ulitmate SD Upscale, upscaling models, SDXL and Flux. Each workflow is tuned to a specific resolution with different speed variants. These workflows are continuing evolving. If you have questions, issues or comments, please open an issue ticket on this Github. Enjoy!   
 
 
 
