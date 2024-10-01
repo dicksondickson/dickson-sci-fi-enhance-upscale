@@ -1,21 +1,49 @@
 # Dickson's Sci-Fi Enhance Upscale  
 
-This a ComfyUI workflow to upscale images to 2K, 4K, or 8K.  
+These are ComfyUI workflows to upscale images to 2K, 4K, or 8K.  
 Great for general upscale on photos and illustrations with Magnific-like results.  
 
-This workflow upscales images in multiple stages using a combination of upscaling models, CCSR, SUPIR and SD Ulitmate Upscale. Each workflow is tuned to a specific resolution with different speed variants. Enjoy!   
+These workflows upscales images in multiple stages using a combination of upscaling models, CCSR, SUPIR and Ulitmate SD Upscale, upscaling models, SDXL and Flux. Each workflow is tuned to a specific resolution with different speed variants. Enjoy!   
 
 
-# BENCHMARK    
+
+# Workflow Descriptions     
+
+**8K Pro Max**   
+Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and Flux FP8 models. 8K target resolution.      
+
+**8K Advanced**   
+Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.        
+
+**4K Pro Max**   
+Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and Flux FP8. 4K target resolution.      
+
+**4k Advanced**   
+Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, and SDXL models. 4K target resolution.      
+
+**4K Fast**   
+Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, and SDXL models. 4K target resolution.   
+
+**4K Lightning**   
+Uses upscaler models only. 4K target resolution.    
+
+**2K Fast**
+Uses upscaler models only. 2K target resolution.    
+
+**2K Lightning**   
+Uses upscaler models only. 2K target resolution.    
+
+
+
+# Benchmarks    
 
 **System specs:** RTX 4090 + AMD Ryzen 9950X    
 
-**8K Pro Max (Flux):** 24 - 33 minutes   
-**4K Pro Max (Flux):** 7 - 11 minutes    
+**8K Pro Max (Flux):** 24 - 33 minutes    
+**8K Advanced (SDXL):** 16 - 24 minutes    
+**8K Fast (SDXL):** 10 - 16 minutes    
 
-**8K Advanced (SDXL):** 16 - 24 minutes   
-**8K Fast (SDXL):** 10 - 16 minutes   
-
+**4K Pro Max (Flux):** 7 - 11 minutes   
 **4K Advanced (SDXL):** 6 - 12 minutes   
 **4K Fast (SDXL):** 4.5 - 8 minutes    
 **4K Lightning (Upscalers):** 2 - 3.5 mintues   
@@ -58,11 +86,15 @@ v4 - Optimized quality and reworded annotations.
 # Models Required  
 
 
-[Flux.1 Dev ](https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main)     
+[Flux.1 Dev FP8 ](https://huggingface.co/Comfy-Org/flux1-dev/blob/main/flux1-dev-fp8.safetensors)       
+
+[Flux VAE ](https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors)     
+
+[T5 text encoder FP8 ](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main)     
 
 [Jasper AI Controlnet for FLux ](https://huggingface.co/jasperai/Flux.1-dev-Controlnet-Upscaler)    
 
-[Boltning - HyperD ](https://civitai.com/models/413466?modelVersionId=488645)       
+[Boltning - HyperD + VAE ](https://civitai.com/models/413466?modelVersionId=488645)       
 
 [RealVisXL V5.0 Lightning ](https://civitai.com/models/139562?modelVersionId=798204)    
 
