@@ -9,7 +9,7 @@ These workflows upscales images in multiple stages using a combination of upscal
 
 # Workflow Descriptions     
 
-**8K Pro Max (FLUX)**    
+**8K Pro Max (FLUX) - EXPERIMENTAL**    
 Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and Flux FP8 models. 8K target resolution. Experimental workflow using Flux - currently smooths things out too much.       
 
 **8K Advanced (SDXL)**   
