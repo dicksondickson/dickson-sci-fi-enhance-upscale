@@ -9,31 +9,31 @@ These workflows upscales images in multiple stages using a combination of upscal
 
 # Workflow Descriptions     
 
-**8K Pro Max**   
-Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and Flux FP8 models. 8K target resolution.      
+**8K Pro Max (FLUX)**    
+Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and Flux FP8 models. 8K target resolution. Experimental workflow using Flux - currently smooths things out too much.       
 
-**8K Advanced**   
-Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.    
+**8K Advanced (SDXL)**   
+Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.     
 
-**8K Fast**   
-Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.  
+**8K Fast (SDXL) **   
+Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.   
 
-**4K Pro Max**   
-Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and Flux FP8. 4K target resolution.      
+**4K Pro Max (FLUX) - EXPERIMENTAL**   
+Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and Flux FP8. 4K target resolution.  Experimental workflow using Flux - currently smooths things out too much.           
 
-**4k Advanced**   
+**4k Advanced (SDXL)**   
 Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, and SDXL models. 4K target resolution.      
 
-**4K Fast**   
+**4K Fast (SDXL)**   
 Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, and SDXL models. 4K target resolution.   
 
-**4K Lightning**   
+**4K Lightning (Upscalers)**   
 Uses upscaler models only. 4K target resolution.    
 
-**2K Fast**   
+**2K Fast (Upscalers)**   
 Uses upscaler models only. 2K target resolution.    
 
-**2K Lightning**   
+**2K Lightning (Upscalers)**   
 Uses upscaler models only. 2K target resolution.    
 
 
