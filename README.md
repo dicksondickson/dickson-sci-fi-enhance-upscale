@@ -15,7 +15,7 @@ Uses JasperAI controlnet, upscale models, SUPIR, Ultimate SD Upscale, SDXL and F
 **8K Advanced (SDXL)**   
 Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.     
 
-**8K Fast (SDXL) **   
+**8K Fast (SDXL)**   
 Uses TTPlanet tile controlnet, upscale models, CCSR, SUPIR, Ultimate SD Upscale and SDXL models. 8K target resolution.   
 
 **4K Pro Max (FLUX) - EXPERIMENTAL**   
