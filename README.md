@@ -125,7 +125,7 @@ This workflow requires my custom nodes. Please get them here or use ComfyUI mana
 There are other custom nodes and other associated models in use and they can be installed when you load up the workflow in ComfyUI. If you are unable to find them with the ComfyUI manager - these are the nodes that the workflow uses:
 
 SUPIR  
-[https://github.com/kijai/ComfyUI-SUPIR](https://https://github.com/kijai/ComfyUI-SUPIR)  
+[https://github.com/kijai/ComfyUI-SUPIR](https://github.com/kijai/ComfyUI-SUPIR)  
 
 
 CCSR  
