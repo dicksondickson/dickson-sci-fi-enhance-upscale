@@ -71,7 +71,7 @@ ComfyUI_UltimateSDUpscale
 
 # Changelog  
 
-2025/05/08 - Updated deprecated nodes and updated notes. Seems like comfyui manager is recommending the wrong custom nodes. See list of needed nodes abouve.
+2025/05/08 - Updated deprecated nodes and updated notes. Seems like comfyui manager is recommending the wrong custom nodes. See list of needed nodes above.  
 2024/10/01 - Updated notes in workflows.   
 2024/09/30 - Separated ProMax version into 4K and 8K as the math nodes is causing problems.     
 2024/09/29 - Bug fixes. Added Pro Max version that uses Flux.    
