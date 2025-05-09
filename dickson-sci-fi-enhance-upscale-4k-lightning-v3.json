@@ -1,0 +1,1834 @@
+{
+  "id": "1502fb09-6367-4549-95ae-9221291b1136",
+  "revision": 0,
+  "last_node_id": 101,
+  "last_link_id": 192,
+  "nodes": [
+    {
+      "id": 96,
+      "type": "Note",
+      "pos": [
+        52,
+        70
+      ],
+      "size": [
+        443.7108154296875,
+        415.3601989746094
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "\n******************************\n\nDICKSON SCI-FI ENHANCE UPSCALE\n4K LIGHTNING\n\n******************************\n\n\nYou'll need the following upscale models to run this workflow:\n\n\n4xRealWebPhoto_v4_dat2\nhttps://openmodeldb.info/models/4x-RealWebPhoto-v4-dat2\n\n\nOmniSR 4x DF2K\nhttps://openmodeldb.info/models/4x-OmniSR-DF2K\n\n\n4xNomos2_hq_dat2\nhttps://openmodeldb.info/models/4x-Nomos2-hq-dat2\n\n\nNMKD Superscale 8x\nhttps://icedrive.net/s/43GNBihZyi"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 23,
+      "type": "ShowText|pysssss",
+      "pos": [
+        971,
+        736
+      ],
+      "size": [
+        249.82907104492188,
+        76
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            116
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "aac13aa7ce35b07d43633c3bbe654a38c00d74f5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "graphis-01-12"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "ShowText|pysssss",
+      "pos": [
+        961,
+        905
+      ],
+      "size": [
+        254.45407104492188,
+        171.86764526367188
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "aac13aa7ce35b07d43633c3bbe654a38c00d74f5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "Width: 832\nHeight: 1216"
+      ]
+    },
+    {
+      "id": 87,
+      "type": "UpscaleModelLoader",
+      "pos": [
+        1390,
+        700
+      ],
+      "size": [
+        610.4263305664062,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "slot_index": 0,
+          "links": [
+            160
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4xRealWebPhoto_v4_dat2\\4xRealWebPhoto_v4_dat2.safetensors"
+      ]
+    },
+    {
+      "id": 65,
+      "type": "Reroute",
+      "pos": [
+        1393,
+        486
+      ],
+      "size": [
+        90.4000015258789,
+        26
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "widget": {
+            "name": "value"
+          },
+          "link": 116
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            182
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 20,
+      "type": "UpscaleModelLoader",
+      "pos": [
+        2060,
+        700
+      ],
+      "size": [
+        610.4263305664062,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "slot_index": 0,
+          "links": [
+            17
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "OmniSR\\OmniSR_X4_DF2K.pth"
+      ]
+    },
+    {
+      "id": 61,
+      "type": "DicksonColorMatch",
+      "pos": [
+        2347,
+        1264
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "color_ref_image",
+          "type": "IMAGE",
+          "link": 155
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 186
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            97
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-dickson-nodes",
+        "ver": "1.0.9",
+        "Node name for S&R": "DicksonColorMatch"
+      },
+      "widgets_values": [
+        "Wavelet"
+      ]
+    },
+    {
+      "id": 85,
+      "type": "Reroute",
+      "pos": [
+        2134,
+        572
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 177
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            155,
+            156
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 62,
+      "type": "DicksonColorMatch",
+      "pos": [
+        3030,
+        1270
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "color_ref_image",
+          "type": "IMAGE",
+          "link": 149
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 188
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            103
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-dickson-nodes",
+        "ver": "1.0.9",
+        "Node name for S&R": "DicksonColorMatch"
+      },
+      "widgets_values": [
+        "Wavelet"
+      ]
+    },
+    {
+      "id": 83,
+      "type": "Reroute",
+      "pos": [
+        2795,
+        575
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 156
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            149,
+            150
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 25,
+      "type": "UpscaleModelLoader",
+      "pos": [
+        2740,
+        710
+      ],
+      "size": [
+        610.4263305664062,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "slot_index": 0,
+          "links": [
+            29
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4xRealWebPhoto_v4_dat2\\4xRealWebPhoto_v4_dat2.safetensors"
+      ]
+    },
+    {
+      "id": 55,
+      "type": "UpscaleModelLoader",
+      "pos": [
+        3432,
+        708
+      ],
+      "size": [
+        610.4263305664062,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "slot_index": 0,
+          "links": [
+            84
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "OmniSR\\OmniSR_X4_DF2K.pth"
+      ]
+    },
+    {
+      "id": 84,
+      "type": "Reroute",
+      "pos": [
+        3432,
+        578
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 150
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            151,
+            152
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 63,
+      "type": "DicksonColorMatch",
+      "pos": [
+        3728,
+        1264
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "color_ref_image",
+          "type": "IMAGE",
+          "link": 151
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 190
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            109
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-dickson-nodes",
+        "ver": "1.0.9",
+        "Node name for S&R": "DicksonColorMatch"
+      },
+      "widgets_values": [
+        "Wavelet"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "UpscaleModelLoader",
+      "pos": [
+        4130,
+        706
+      ],
+      "size": [
+        610.4263305664062,
+        58
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "slot_index": 0,
+          "links": [
+            31
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4xNomos2_hq_dat2\\4xNomos2_hq_dat2.pth"
+      ]
+    },
+    {
+      "id": 51,
+      "type": "Reroute",
+      "pos": [
+        4124,
+        577
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 152
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            136,
+            153
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 14,
+      "type": "DicksonColorMatch",
+      "pos": [
+        4412,
+        1263
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "color_ref_image",
+          "type": "IMAGE",
+          "link": 153
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 192
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            115,
+            158
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-dickson-nodes",
+        "ver": "1.0.9",
+        "Node name for S&R": "DicksonColorMatch"
+      },
+      "widgets_values": [
+        "Wavelet"
+      ]
+    },
+    {
+      "id": 68,
+      "type": "Reroute",
+      "pos": [
+        4646,
+        489
+      ],
+      "size": [
+        90.4000015258789,
+        26
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "widget": {
+            "name": "value"
+          },
+          "link": 182
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            123
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 35,
+      "type": "SaveImage",
+      "pos": [
+        4856,
+        1007
+      ],
+      "size": [
+        675.0816650390625,
+        582.9714965820312
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 115
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": 45
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "Image Comparer (rgthree)",
+      "pos": [
+        5563,
+        1013
+      ],
+      "size": [
+        730.93896484375,
+        579.87890625
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "name": "image_a",
+          "type": "IMAGE",
+          "link": 158
+        },
+        {
+          "dir": 3,
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 159
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "1.0.0",
+        "comparer_mode": "Slide"
+      },
+      "widgets_values": [
+        [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_ievix_00001_.png&type=temp&subfolder=&rand=0.6246137686152171"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_ievix_00002_.png&type=temp&subfolder=&rand=0.5852320518506784"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 79,
+      "type": "Reroute",
+      "pos": [
+        5401,
+        574
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 136
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            159
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 95,
+      "type": "Reroute",
+      "pos": [
+        1390,
+        570
+      ],
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 179
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            176,
+            177,
+            178
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 88,
+      "type": "ImageUpscaleWithModel",
+      "pos": [
+        1660,
+        820
+      ],
+      "size": [
+        340.20001220703125,
+        46
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 160
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 178
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            183
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "ImageUpscaleWithModel"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 93,
+      "type": "DicksonColorMatch",
+      "pos": [
+        1705.45751953125,
+        1260
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "color_ref_image",
+          "type": "IMAGE",
+          "link": 176
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 184
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            167
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-dickson-nodes",
+        "ver": "1.0.9",
+        "Node name for S&R": "DicksonColorMatch"
+      },
+      "widgets_values": [
+        "Wavelet"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "DicksonLoadImage",
+      "pos": [
+        50,
+        570
+      ],
+      "size": [
+        803.0537109375,
+        737.7430419921875
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            179
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "FILENAME",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": [
+            15
+          ]
+        },
+        {
+          "name": "IMAGE WIDTH INT",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "IMAGE HEIGHT INT",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "IMAGE INFO",
+          "type": "STRING",
+          "slot_index": 5,
+          "links": [
+            14
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-dickson-nodes",
+        "ver": "1.0.9",
+        "Node name for S&R": "DicksonLoadImage"
+      },
+      "widgets_values": [
+        "graphis-01-12.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 97,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        1703.5482177734375,
+        939.6079711914062
+      ],
+      "size": [
+        270,
+        242
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 183
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            184
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.1.0",
+        "Node name for S&R": "ImageResizeKJv2"
+      },
+      "widgets_values": [
+        2048,
+        2048,
+        "lanczos",
+        "resize",
+        "0, 0, 0",
+        "center",
+        1
+      ]
+    },
+    {
+      "id": 21,
+      "type": "ImageUpscaleWithModel",
+      "pos": [
+        2329,
+        819
+      ],
+      "size": [
+        340.20001220703125,
+        46
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 17
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 167
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            185
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "ImageUpscaleWithModel"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 98,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        2357.995849609375,
+        934.604736328125
+      ],
+      "size": [
+        270,
+        242
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 185
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            186
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.1.0",
+        "Node name for S&R": "ImageResizeKJv2"
+      },
+      "widgets_values": [
+        2048,
+        2048,
+        "lanczos",
+        "resize",
+        "0, 0, 0",
+        "center",
+        1
+      ]
+    },
+    {
+      "id": 26,
+      "type": "ImageUpscaleWithModel",
+      "pos": [
+        3010,
+        820
+      ],
+      "size": [
+        340.20001220703125,
+        46
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 29
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 97
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            187
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "ImageUpscaleWithModel"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 99,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        3045.32958984375,
+        948.2210083007812
+      ],
+      "size": [
+        270,
+        242
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 187
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            188
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.1.0",
+        "Node name for S&R": "ImageResizeKJv2"
+      },
+      "widgets_values": [
+        2560,
+        2560,
+        "lanczos",
+        "resize",
+        "0, 0, 0",
+        "center",
+        1
+      ]
+    },
+    {
+      "id": 56,
+      "type": "ImageUpscaleWithModel",
+      "pos": [
+        3699,
+        833
+      ],
+      "size": [
+        340.20001220703125,
+        46
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 84
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 103
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            189
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "ImageUpscaleWithModel"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 100,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        3740.952880859375,
+        944.076416015625
+      ],
+      "size": [
+        270,
+        242
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 189
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            190
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.1.0",
+        "Node name for S&R": "ImageResizeKJv2"
+      },
+      "widgets_values": [
+        3072,
+        3072,
+        "lanczos",
+        "resize",
+        "0, 0, 0",
+        "center",
+        1
+      ]
+    },
+    {
+      "id": 29,
+      "type": "ImageUpscaleWithModel",
+      "pos": [
+        4398,
+        821
+      ],
+      "size": [
+        340.20001220703125,
+        46
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 31
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 109
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            191
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.33",
+        "Node name for S&R": "ImageUpscaleWithModel"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 101,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        4428.880859375,
+        944.6689453125
+      ],
+      "size": [
+        270,
+        242
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 191
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            192
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.1.0",
+        "Node name for S&R": "ImageResizeKJv2"
+      },
+      "widgets_values": [
+        4090,
+        4096,
+        "lanczos",
+        "resize",
+        "0, 0, 0",
+        "center",
+        1
+      ]
+    },
+    {
+      "id": 36,
+      "type": "StringFunction|pysssss",
+      "pos": [
+        4863.5361328125,
+        671.5296020507812
+      ],
+      "size": [
+        400,
+        274
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "text_a"
+          },
+          "link": 123
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            45
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "aac13aa7ce35b07d43633c3bbe654a38c00d74f5",
+        "Node name for S&R": "StringFunction|pysssss"
+      },
+      "widgets_values": [
+        "append",
+        "no",
+        "",
+        "_UPSCALED",
+        "",
+        "graphis-01-12_UPSCALED"
+      ]
+    }
+  ],
+  "links": [
+    [
+      14,
+      13,
+      5,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      15,
+      13,
+      2,
+      23,
+      0,
+      "STRING"
+    ],
+    [
+      17,
+      20,
+      0,
+      21,
+      0,
+      "UPSCALE_MODEL"
+    ],
+    [
+      29,
+      25,
+      0,
+      26,
+      0,
+      "UPSCALE_MODEL"
+    ],
+    [
+      31,
+      28,
+      0,
+      29,
+      0,
+      "UPSCALE_MODEL"
+    ],
+    [
+      45,
+      36,
+      0,
+      35,
+      1,
+      "STRING"
+    ],
+    [
+      84,
+      55,
+      0,
+      56,
+      0,
+      "UPSCALE_MODEL"
+    ],
+    [
+      97,
+      61,
+      0,
+      26,
+      1,
+      "IMAGE"
+    ],
+    [
+      103,
+      62,
+      0,
+      56,
+      1,
+      "IMAGE"
+    ],
+    [
+      109,
+      63,
+      0,
+      29,
+      1,
+      "IMAGE"
+    ],
+    [
+      115,
+      14,
+      0,
+      35,
+      0,
+      "IMAGE"
+    ],
+    [
+      116,
+      23,
+      0,
+      65,
+      0,
+      "*"
+    ],
+    [
+      123,
+      68,
+      0,
+      36,
+      0,
+      "STRING"
+    ],
+    [
+      136,
+      51,
+      0,
+      79,
+      0,
+      "*"
+    ],
+    [
+      149,
+      83,
+      0,
+      62,
+      0,
+      "IMAGE"
+    ],
+    [
+      150,
+      83,
+      0,
+      84,
+      0,
+      "*"
+    ],
+    [
+      151,
+      84,
+      0,
+      63,
+      0,
+      "IMAGE"
+    ],
+    [
+      152,
+      84,
+      0,
+      51,
+      0,
+      "*"
+    ],
+    [
+      153,
+      51,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      155,
+      85,
+      0,
+      61,
+      0,
+      "IMAGE"
+    ],
+    [
+      156,
+      85,
+      0,
+      83,
+      0,
+      "*"
+    ],
+    [
+      158,
+      14,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ],
+    [
+      159,
+      79,
+      0,
+      24,
+      1,
+      "IMAGE"
+    ],
+    [
+      160,
+      87,
+      0,
+      88,
+      0,
+      "UPSCALE_MODEL"
+    ],
+    [
+      167,
+      93,
+      0,
+      21,
+      1,
+      "IMAGE"
+    ],
+    [
+      176,
+      95,
+      0,
+      93,
+      0,
+      "IMAGE"
+    ],
+    [
+      177,
+      95,
+      0,
+      85,
+      0,
+      "*"
+    ],
+    [
+      178,
+      95,
+      0,
+      88,
+      1,
+      "IMAGE"
+    ],
+    [
+      179,
+      13,
+      0,
+      95,
+      0,
+      "*"
+    ],
+    [
+      182,
+      65,
+      0,
+      68,
+      0,
+      "*"
+    ],
+    [
+      183,
+      88,
+      0,
+      97,
+      0,
+      "IMAGE"
+    ],
+    [
+      184,
+      97,
+      0,
+      93,
+      1,
+      "IMAGE"
+    ],
+    [
+      185,
+      21,
+      0,
+      98,
+      0,
+      "IMAGE"
+    ],
+    [
+      186,
+      98,
+      0,
+      61,
+      1,
+      "IMAGE"
+    ],
+    [
+      187,
+      26,
+      0,
+      99,
+      0,
+      "IMAGE"
+    ],
+    [
+      188,
+      99,
+      0,
+      62,
+      1,
+      "IMAGE"
+    ],
+    [
+      189,
+      56,
+      0,
+      100,
+      0,
+      "IMAGE"
+    ],
+    [
+      190,
+      100,
+      0,
+      63,
+      1,
+      "IMAGE"
+    ],
+    [
+      191,
+      29,
+      0,
+      101,
+      0,
+      "IMAGE"
+    ],
+    [
+      192,
+      101,
+      0,
+      14,
+      1,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5730855330116983,
+      "offset": [
+        1386.3501862407213,
+        470.29937792044336
+      ]
+    },
+    "frontendVersion": "1.18.9"
+  },
+  "version": 0.4
+}
